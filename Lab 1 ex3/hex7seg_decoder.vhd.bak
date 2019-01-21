@@ -1,0 +1,19 @@
+using ieee_
+
+entity hex7seg_decoder is
+
+port: D: in std_logic_vector(3 downto 0);
+		S: out std_logic_vector(6 downto 0)
+      );
+
+
+end entity hex7seg_dedoer
+
+architecture dataflow of is
+
+
+begin
+
+
+
+end architecture dataflow
