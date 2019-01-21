@@ -1,0 +1,8 @@
+|muxes
+s => y.IN0
+s => y.IN0
+D1 => y.IN1
+D0 => y.IN1
+y << y.DB_MAX_OUTPUT_PORT_TYPE
+
+

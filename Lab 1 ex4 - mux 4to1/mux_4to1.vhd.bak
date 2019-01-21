@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux_4to1 is
+
+port ( s1 : in std_logic;
+       s0 : in std_logic;
+		 D3 : in std_logic;
+		 D2 : in std_logic;
+		 D1 : in std_logic;
+		 D0 : in std_logic;
+		 y  : out std_logic
+     );
+
+
+
+end entity mux_4to1;
+
+architecture dataflow of mux_4to1 is
+
+
+begin
+
+end architecture dataflow;
