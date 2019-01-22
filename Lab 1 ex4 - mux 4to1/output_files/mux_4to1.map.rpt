@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mux_4to1
-Mon Jan 21 15:44:52 2019
+Mon Jan 21 22:28:57 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jan 21 15:44:52 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 21 22:28:57 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; mux_4to1                                    ;
 ; Top-level Entity Name              ; mux_4to1                                    ;
@@ -261,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jan 21 15:44:43 2019
+    Info: Processing started: Mon Jan 21 22:28:47 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mux_4to1 -c mux_4to1
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file mux_2to1.vhd
@@ -281,8 +281,8 @@ Info (21057): Implemented 9 device resources after synthesis - the final resourc
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Mon Jan 21 15:44:52 2019
-    Info: Elapsed time: 00:00:09
+    Info: Processing ended: Mon Jan 21 22:28:57 2019
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 
 

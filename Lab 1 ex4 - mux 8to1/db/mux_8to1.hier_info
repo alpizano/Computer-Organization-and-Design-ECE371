@@ -1,0 +1,96 @@
+|mux_8to1
+s2 => mux_2to1:mux2to1.s
+s1 => mux_4to1:mux4to1_1.s1
+s1 => mux_4to1:mux4to1_2.s1
+s0 => mux_4to1:mux4to1_1.s0
+s0 => mux_4to1:mux4to1_2.s0
+D0 => mux_4to1:mux4to1_1.D0
+D1 => mux_4to1:mux4to1_1.D1
+D2 => mux_4to1:mux4to1_1.D2
+D3 => mux_4to1:mux4to1_1.D3
+D4 => mux_4to1:mux4to1_2.D0
+D5 => mux_4to1:mux4to1_2.D1
+D6 => mux_4to1:mux4to1_2.D2
+D6 => mux_4to1:mux4to1_2.D3
+D7 => ~NO_FANOUT~
+y <= mux_2to1:mux2to1.y
+
+
+|mux_8to1|mux_4to1:mux4to1_1
+s1 => mux_2to1:mux3.s
+s0 => mux_2to1:mux1.s
+s0 => mux_2to1:mux2.s
+D0 => mux_2to1:mux1.D0
+D1 => mux_2to1:mux1.D1
+D2 => mux_2to1:mux2.D0
+D3 => mux_2to1:mux2.D1
+y <= mux_2to1:mux3.y
+
+
+|mux_8to1|mux_4to1:mux4to1_1|mux_2to1:mux1
+s => y.IN0
+s => y.IN0
+D0 => y.IN1
+D1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_8to1|mux_4to1:mux4to1_1|mux_2to1:mux2
+s => y.IN0
+s => y.IN0
+D0 => y.IN1
+D1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_8to1|mux_4to1:mux4to1_1|mux_2to1:mux3
+s => y.IN0
+s => y.IN0
+D0 => y.IN1
+D1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_8to1|mux_4to1:mux4to1_2
+s1 => mux_2to1:mux3.s
+s0 => mux_2to1:mux1.s
+s0 => mux_2to1:mux2.s
+D0 => mux_2to1:mux1.D0
+D1 => mux_2to1:mux1.D1
+D2 => mux_2to1:mux2.D0
+D3 => mux_2to1:mux2.D1
+y <= mux_2to1:mux3.y
+
+
+|mux_8to1|mux_4to1:mux4to1_2|mux_2to1:mux1
+s => y.IN0
+s => y.IN0
+D0 => y.IN1
+D1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_8to1|mux_4to1:mux4to1_2|mux_2to1:mux2
+s => y.IN0
+s => y.IN0
+D0 => y.IN1
+D1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_8to1|mux_4to1:mux4to1_2|mux_2to1:mux3
+s => y.IN0
+s => y.IN0
+D0 => y.IN1
+D1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_8to1|mux_2to1:mux2to1
+s => y.IN0
+s => y.IN0
+D0 => y.IN1
+D1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

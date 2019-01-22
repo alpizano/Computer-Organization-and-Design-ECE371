@@ -18,22 +18,23 @@ architecture dataflow of priority_encoder is
       --declaration potrion of the architecture  
 		
   --intermediate signal that will concatanate y output + NONE output in 1 vector
-   signal y_NONE : std_logic_vector(3 downto 0); 
+   signal yNONE : std_logic_vector(3 downto 0); 
 
 begin
-   NONE <= y_NONE(0);
-   y <= y_NONE(3 downto 1);
+   NONE <= yNONE(0);
+   y <= yNONE(3 downto 1);
+	--y_None <= y & NONE;
 	 
      --implementation portion of the architecture 
-  y_NONE <= "0000" when A(0) = '1' else
-            "0010" when A(1) = '1' else
-				"0100" when A(2) = '1' else
-				"0110" when A(3) = '1' else
-				"1000" when A(4) = '1' else
-				"1010" when A(5) = '1' else -- 00101000, the output Y should be 101 and NONE should be 0
-				"1100" when A(6) = '1' else
-				"1110" when A(7) = '1' else
-				"---1"; --don't care base case
+  yNONE <= "1110" when A(7) = '1' else
+  "1100" when A(6) = '1' else
+  "1010" when A(5) = '1' else -- 00101000, the output Y should be 101 and NONE should be 0
+  "1000" when A(4) = '1' else	
+  "0110" when A(3) = '1' else  
+  "0100" when A(2) = '1' else
+  "0010" when A(1) = '1' else
+  "0000" when A(0) = '1' else
+  "---1"; --don't care base case
 
     
 end architecture dataflow;  
