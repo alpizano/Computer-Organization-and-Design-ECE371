@@ -1,0 +1,114 @@
+|comp_8bit
+A[0] => comparator:u1.A[0]
+A[1] => comparator:u1.A[1]
+A[2] => comparator:u2.A[0]
+A[3] => comparator:u2.A[1]
+A[4] => comparator:u3.A[0]
+A[5] => comparator:u3.A[1]
+A[6] => comparator:u4.A[0]
+A[7] => comparator:u4.A[1]
+B[0] => comparator:u1.B[0]
+B[1] => comparator:u1.B[1]
+B[2] => comparator:u2.B[0]
+B[3] => comparator:u2.B[1]
+B[4] => comparator:u3.B[0]
+B[5] => comparator:u3.B[1]
+B[6] => comparator:u4.B[0]
+B[7] => comparator:u4.B[1]
+L <= comparator:u4.L
+G <= comparator:u4.G
+E <= comparator:u4.E
+
+
+|comp_8bit|comparator:u1
+A[0] => process_0.IN0
+A[0] => Equal0.IN1
+A[0] => process_0.IN1
+A[1] => process_0.IN0
+A[1] => process_0.IN0
+A[1] => Equal0.IN0
+A[1] => process_0.IN0
+B[0] => process_0.IN1
+B[0] => Equal0.IN3
+B[0] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => Equal0.IN2
+B[1] => process_0.IN1
+L_in => process_0.IN1
+G_in => process_0.IN1
+E_in => process_0.IN1
+L <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+G <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+E <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comp_8bit|comparator:u2
+A[0] => process_0.IN0
+A[0] => Equal0.IN1
+A[0] => process_0.IN1
+A[1] => process_0.IN0
+A[1] => process_0.IN0
+A[1] => Equal0.IN0
+A[1] => process_0.IN0
+B[0] => process_0.IN1
+B[0] => Equal0.IN3
+B[0] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => Equal0.IN2
+B[1] => process_0.IN1
+L_in => process_0.IN1
+G_in => process_0.IN1
+E_in => process_0.IN1
+L <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+G <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+E <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comp_8bit|comparator:u3
+A[0] => process_0.IN0
+A[0] => Equal0.IN1
+A[0] => process_0.IN1
+A[1] => process_0.IN0
+A[1] => process_0.IN0
+A[1] => Equal0.IN0
+A[1] => process_0.IN0
+B[0] => process_0.IN1
+B[0] => Equal0.IN3
+B[0] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => Equal0.IN2
+B[1] => process_0.IN1
+L_in => process_0.IN1
+G_in => process_0.IN1
+E_in => process_0.IN1
+L <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+G <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+E <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comp_8bit|comparator:u4
+A[0] => process_0.IN0
+A[0] => Equal0.IN1
+A[0] => process_0.IN1
+A[1] => process_0.IN0
+A[1] => process_0.IN0
+A[1] => Equal0.IN0
+A[1] => process_0.IN0
+B[0] => process_0.IN1
+B[0] => Equal0.IN3
+B[0] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => process_0.IN1
+B[1] => Equal0.IN2
+B[1] => process_0.IN1
+L_in => process_0.IN1
+G_in => process_0.IN1
+E_in => process_0.IN1
+L <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+G <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+E <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
