@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity comp_8bit is
+port( A: in std_logic_vector(7 downto 0);
+		B: in std_logic_vector(7 downto 0);
+		L: out std_logic;
+		G: out std_logic;
+		E: out std_logic
+);
+
+end entity comp_8bit;
+
+architecture dataflow of comp_8bit is
+
+
+
+begin
+
+process (A,B)
+
+if (A > B)
+then
+
+elsif
+
+elsif
+
+
+else
+
+
+end process
+
+
+
+end architecture dataflow;
