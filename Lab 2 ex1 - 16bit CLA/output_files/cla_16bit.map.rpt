@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cla_16bit
-Mon Feb 11 00:10:48 2019
+Mon Feb 11 01:49:42 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +42,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Feb 11 00:10:48 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 11 01:49:42 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; cla_16bit                                   ;
 ; Top-level Entity Name              ; cla_16bit                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 39                                          ;
+;     Total combinational functions  ; 39                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 50                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -155,13 +161,110 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; cla_4bit.vhd                     ; yes             ; User VHDL File  ; G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_4bit.vhd  ;         ;
+; cla_16bit.vhd                    ; yes             ; User VHDL File  ; G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_16bit.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                         ;
++---------------------------------------------+---------------------------------------+
+; Resource                                    ; Usage                                 ;
++---------------------------------------------+---------------------------------------+
+; Estimated Total logic elements              ; 39                                    ;
+;                                             ;                                       ;
+; Total combinational functions               ; 39                                    ;
+; Logic element usage by number of LUT inputs ;                                       ;
+;     -- 4 input functions                    ; 15                                    ;
+;     -- 3 input functions                    ; 17                                    ;
+;     -- <=2 input functions                  ; 7                                     ;
+;                                             ;                                       ;
+; Logic elements by mode                      ;                                       ;
+;     -- normal mode                          ; 39                                    ;
+;     -- arithmetic mode                      ; 0                                     ;
+;                                             ;                                       ;
+; Total registers                             ; 0                                     ;
+;     -- Dedicated logic registers            ; 0                                     ;
+;     -- I/O registers                        ; 0                                     ;
+;                                             ;                                       ;
+; I/O pins                                    ; 50                                    ;
+;                                             ;                                       ;
+; Embedded Multiplier 9-bit elements          ; 0                                     ;
+;                                             ;                                       ;
+; Maximum fan-out node                        ; cla_4bit:cla_4bit_4|Cin_internal[1]~0 ;
+; Maximum fan-out                             ; 3                                     ;
+; Total fan-out                               ; 192                                   ;
+; Average fan-out                             ; 1.38                                  ;
++---------------------------------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                 ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
+; |cla_16bit                 ; 39 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |cla_16bit                     ; cla_16bit   ; work         ;
+;    |cla_4bit:cla_4bit_1|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cla_16bit|cla_4bit:cla_4bit_1 ; cla_4bit    ; work         ;
+;    |cla_4bit:cla_4bit_2|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cla_16bit|cla_4bit:cla_4bit_2 ; cla_4bit    ; work         ;
+;    |cla_4bit:cla_4bit_3|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cla_16bit|cla_4bit:cla_4bit_3 ; cla_4bit    ; work         ;
+;    |cla_4bit:cla_4bit_4|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cla_16bit|cla_4bit:cla_4bit_4 ; cla_4bit    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 50                          ;
+; cycloneiii_lcell_comb ; 39                          ;
+;     normal            ; 39                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 15                          ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 5.60                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Feb 11 00:10:39 2019
+    Info: Processing started: Mon Feb 11 01:49:33 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cla_16bit -c cla_16bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -171,12 +274,19 @@ Info (12021): Found 2 design units, including 1 entities, in source file cla_4bi
 Info (12021): Found 2 design units, including 1 entities, in source file cla_16bit.vhd
     Info (12022): Found design unit 1: cla_16bit-structure File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_16bit.vhd Line: 15
     Info (12023): Found entity 1: cla_16bit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_16bit.vhd Line: 4
-Error (10346): VHDL error at cla_16bit.vhd(33): formal port or parameter "Cin" must have actual or default value File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_16bit.vhd Line: 33
-Error (10784): HDL error at cla_4bit.vhd(9): see declaration for object "Cin" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_4bit.vhd Line: 9
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4800 megabytes
-    Error: Processing ended: Mon Feb 11 00:10:48 2019
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:20
+Info (12127): Elaborating entity "cla_16bit" for the top level hierarchy
+Info (12129): Elaborating entity "cla_4bit" using architecture "A:dataflow" for hierarchy "cla_4bit:cla_4bit_1" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_16bit.vhd Line: 24
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 33 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 39 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Mon Feb 11 01:49:42 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 
