@@ -1,5 +1,5 @@
 Flow report for array_multi_5bit
-Mon Feb 11 03:00:12 2019
+Mon Feb 11 20:28:58 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon Feb 11 03:00:12 2019      ;
+; Flow Status                        ; Flow Failed - Mon Feb 11 20:28:58 2019      ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; array_multi_5bit                            ;
 ; Top-level Entity Name              ; array_multi_5bit                            ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/11/2019 03:00:04 ;
+; Start date & time ; 02/11/2019 20:28:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; array_multi_5bit    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 229044592196453.154987560424872        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 229044592196453.154993852926312        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -96,8 +96,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4802 MB             ; 00:00:19                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4800 MB             ; 00:00:20                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for array_multi_5bit
-Mon Feb 11 03:00:12 2019
+Mon Feb 11 20:28:58 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Feb 11 03:00:12 2019           ;
+; Analysis & Synthesis Status        ; Failed - Mon Feb 11 20:28:58 2019           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; array_multi_5bit                            ;
 ; Top-level Entity Name              ; array_multi_5bit                            ;
@@ -163,26 +163,23 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Feb 11 03:00:03 2019
+    Info: Processing started: Mon Feb 11 20:28:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off array_multi_5bit -c array_multi_5bit
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file rca_4bit.vhd
-    Info (12022): Found design unit 1: rca_4bit-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/rca_4bit.vhd Line: 13
+    Info (12022): Found design unit 1: rca_4bit-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/rca_4bit.vhd Line: 14
     Info (12023): Found entity 1: rca_4bit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/rca_4bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
     Info (12022): Found design unit 1: full_adder-dataflow File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/full_adder.vhd Line: 14
     Info (12023): Found entity 1: full_adder File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/full_adder.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file array_multi_5bit.vhd
-    Info (12022): Found design unit 1: array_multi_5bit-dataflow File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 22
+    Info (12022): Found design unit 1: array_multi_5bit-structure File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 14
     Info (12023): Found entity 1: array_multi_5bit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 4
-Error (10482): VHDL error at array_multi_5bit.vhd(53): object "P1" is used but not declared File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 53
-Error (10558): VHDL error at array_multi_5bit.vhd(53): cannot associate formal port "S" of mode "out" with an expression File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 53
-Error (10482): VHDL error at array_multi_5bit.vhd(53): object "C0" is used but not declared File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 53
-Error (10558): VHDL error at array_multi_5bit.vhd(53): cannot associate formal port "Cout" of mode "out" with an expression File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 53
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 0 warnings
-    Error: Peak virtual memory: 4802 megabytes
-    Error: Processing ended: Mon Feb 11 03:00:12 2019
+Error (10482): VHDL error at array_multi_5bit.vhd(36): object "Crazy" is used but not declared File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multiplier/array_multi_5bit.vhd Line: 36
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
+    Error: Peak virtual memory: 4800 megabytes
+    Error: Processing ended: Mon Feb 11 20:28:58 2019
     Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:19
+    Error: Total CPU time (on all processors): 00:00:20
 
 

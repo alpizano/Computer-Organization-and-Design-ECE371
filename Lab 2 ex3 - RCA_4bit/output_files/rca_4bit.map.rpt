@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rca_4bit
-Mon Feb 11 02:29:43 2019
+Mon Feb 11 20:11:17 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb 11 02:29:43 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 11 20:11:16 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; rca_4bit                                    ;
 ; Top-level Entity Name              ; rca_4bit                                    ;
@@ -264,17 +264,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Feb 11 02:29:33 2019
+    Info: Processing started: Mon Feb 11 20:11:07 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rca_4bit -c rca_4bit
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
     Info (12022): Found design unit 1: full_adder-dataflow File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/full_adder.vhd Line: 14
     Info (12023): Found entity 1: full_adder File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/full_adder.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file rca_4bit.vhd
-    Info (12022): Found design unit 1: rca_4bit-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/rca_4bit.vhd Line: 13
-    Info (12023): Found entity 1: rca_4bit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/rca_4bit.vhd Line: 4
+    Info (12022): Found design unit 1: rca_4bit-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/rca_4bit.vhd Line: 51
+    Info (12023): Found entity 1: rca_4bit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/rca_4bit.vhd Line: 41
 Info (12127): Elaborating entity "rca_4bit" for the top level hierarchy
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:FA1" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/rca_4bit.vhd Line: 34
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:FA1" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - RCA_4bit/rca_4bit.vhd Line: 73
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -283,8 +283,8 @@ Info (21057): Implemented 22 device resources after synthesis - the final resour
     Info (21059): Implemented 5 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Mon Feb 11 02:29:43 2019
+    Info: Peak virtual memory: 4818 megabytes
+    Info: Processing ended: Mon Feb 11 20:11:17 2019
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 
