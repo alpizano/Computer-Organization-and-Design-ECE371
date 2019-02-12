@@ -14,7 +14,7 @@ architecture behavioral of rca_4bit is
 
 	 
 -- Full Adder VHDL Code Component Decalaration
-component full_adder
+component full_adder 
 port ( A : in std_logic;
 	    B : in std_logic;
 	    Cin : in std_logic;
