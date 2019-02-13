@@ -1,0 +1,5 @@
+|rotator_4bit
+A => ~NO_FANOUT~
+B <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
