@@ -1,127 +1,23 @@
 |array_multi_5bit
-A[0] => comb.IN0
-A[0] => P.IN0
-A[1] => comb.IN0
-A[1] => comb.IN0
-A[2] => comb.IN0
-A[2] => comb.IN0
-A[3] => comb.IN0
-A[3] => comb.IN0
-A[4] => comb.IN0
-B[0] => comb.IN1
-B[0] => comb.IN1
-B[0] => comb.IN1
-B[0] => comb.IN1
-B[0] => P.IN1
-B[1] => comb.IN1
-B[1] => comb.IN1
-B[1] => comb.IN1
-B[1] => comb.IN1
-B[2] => ~NO_FANOUT~
-B[3] => ~NO_FANOUT~
-B[4] => ~NO_FANOUT~
-P[0] <= P.DB_MAX_OUTPUT_PORT_TYPE
-P[1] <= rca_4bit:level_0.S[0]
-P[2] <= <GND>
-P[3] <= <GND>
-P[4] <= <GND>
-P[5] <= <GND>
-P[6] <= <GND>
-P[7] <= <GND>
-P[8] <= <GND>
-P[9] <= <GND>
-Cout[0] <= <GND>
-Cout[1] <= <GND>
-Cout[2] <= <GND>
-Cout[3] <= rca_4bit:level_0.Cout
-Cout[4] <= <GND>
-Cout[5] <= <GND>
-Cout[6] <= <GND>
-Cout[7] <= <GND>
-Cout[8] <= <GND>
-Cout[9] <= <GND>
-Cout[10] <= <GND>
-Cout[11] <= <GND>
-Cout[12] <= <GND>
-Cout[13] <= <GND>
-Cout[14] <= <GND>
-Cout[15] <= <GND>
-Cout[16] <= <GND>
-Cout[17] <= <GND>
-Cout[18] <= <GND>
-Cout[19] <= <GND>
-
-
-|array_multi_5bit|rca_4bit:level_0
-A[0] => full_adder:FA1.A
-A[1] => full_adder:FA2.A
-A[2] => full_adder:FA3.A
-A[3] => full_adder:FA4.A
-B[0] => full_adder:FA1.B
-B[1] => full_adder:FA2.B
-B[2] => full_adder:FA3.B
-B[3] => full_adder:FA4.B
-Cin => full_adder:FA1.Cin
-S[0] <= full_adder:FA1.S
-S[1] <= full_adder:FA2.S
-S[2] <= full_adder:FA3.S
-S[3] <= full_adder:FA4.S
-Cout <= full_adder:FA4.Cout
-
-
-|array_multi_5bit|rca_4bit:level_0|full_adder:FA1
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN0
-Cin => S.IN1
-Cin => Cout.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|array_multi_5bit|rca_4bit:level_0|full_adder:FA2
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN0
-Cin => S.IN1
-Cin => Cout.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|array_multi_5bit|rca_4bit:level_0|full_adder:FA3
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN0
-Cin => S.IN1
-Cin => Cout.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|array_multi_5bit|rca_4bit:level_0|full_adder:FA4
-A => S.IN0
-A => Cout.IN0
-A => Cout.IN0
-B => S.IN1
-B => Cout.IN1
-B => Cout.IN0
-Cin => S.IN1
-Cin => Cout.IN1
-Cin => Cout.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+X[0] => P.IN0
+X[1] => ~NO_FANOUT~
+X[2] => ~NO_FANOUT~
+X[3] => ~NO_FANOUT~
+X[4] => ~NO_FANOUT~
+Y[0] => P.IN1
+Y[1] => ~NO_FANOUT~
+Y[2] => ~NO_FANOUT~
+Y[3] => ~NO_FANOUT~
+Y[4] => ~NO_FANOUT~
+P[0] << P.DB_MAX_OUTPUT_PORT_TYPE
+P[1] << <GND>
+P[2] << <GND>
+P[3] << <GND>
+P[4] << <GND>
+P[5] << <GND>
+P[6] << <GND>
+P[7] << <GND>
+P[8] << <GND>
+P[9] << <GND>
 
 

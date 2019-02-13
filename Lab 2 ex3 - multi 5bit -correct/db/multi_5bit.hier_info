@@ -1,0 +1,319 @@
+|multi_5bit
+X[0] => comb.IN0
+X[0] => comb.IN0
+X[0] => comb.IN0
+X[0] => comb.IN0
+X[0] => P.IN0
+X[1] => comb.IN0
+X[1] => comb.IN0
+X[1] => comb.IN0
+X[1] => comb.IN0
+X[1] => comb.IN0
+X[2] => comb.IN0
+X[2] => comb.IN0
+X[2] => comb.IN0
+X[2] => comb.IN0
+X[2] => comb.IN0
+X[3] => comb.IN0
+X[3] => comb.IN0
+X[3] => comb.IN0
+X[3] => comb.IN0
+X[3] => comb.IN0
+X[4] => comb.IN0
+X[4] => comb.IN0
+X[4] => comb.IN0
+X[4] => comb.IN0
+X[4] => comb.IN0
+Y[0] => comb.IN1
+Y[0] => comb.IN1
+Y[0] => comb.IN1
+Y[0] => comb.IN1
+Y[0] => P.IN1
+Y[1] => comb.IN1
+Y[1] => comb.IN1
+Y[1] => comb.IN1
+Y[1] => comb.IN1
+Y[1] => comb.IN1
+Y[2] => comb.IN1
+Y[2] => comb.IN1
+Y[2] => comb.IN1
+Y[2] => comb.IN1
+Y[2] => comb.IN1
+Y[3] => comb.IN1
+Y[3] => comb.IN1
+Y[3] => comb.IN1
+Y[3] => comb.IN1
+Y[3] => comb.IN1
+Y[4] => comb.IN1
+Y[4] => comb.IN1
+Y[4] => comb.IN1
+Y[4] => comb.IN1
+Y[4] => comb.IN1
+Cout <= full_adder:FA_20.Cout
+P[0] <= P.DB_MAX_OUTPUT_PORT_TYPE
+P[1] <= half_adder:HA_1.S
+P[2] <= half_adder:HA_6.S
+P[3] <= half_adder:HA_11.S
+P[4] <= half_adder:HA_16.S
+P[5] <= full_adder:FA_17.S
+P[6] <= full_adder:FA_18.S
+P[7] <= full_adder:FA_19.S
+P[8] <= full_adder:FA_20.S
+P[9] <= full_adder:FA_20.Cout
+
+
+|multi_5bit|half_adder:HA_1
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_2
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_3
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_4
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|half_adder:HA_5
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|half_adder:HA_6
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_7
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_8
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_9
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_10
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|half_adder:HA_11
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_12
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_13
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_14
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_15
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|half_adder:HA_16
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_17
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_18
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_19
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multi_5bit|full_adder:FA_20
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

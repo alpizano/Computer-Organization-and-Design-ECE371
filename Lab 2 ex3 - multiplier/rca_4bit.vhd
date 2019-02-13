@@ -25,14 +25,14 @@ architecture behavioral of rca_4bit is
 		 
 				end component;
 	
-signal Crazy : std_logic_vector(3 downto 1);
+signal c : std_logic_vector(3 downto 1);
 
 begin
 
 -- Port Mapping Full Adder 4 times
-FA1: full_adder port map( A(0), B(0), Cin, S(0), Crazy(1));
-FA2: full_adder port map( A(1), B(1), Crazy(1), S(1), Crazy(2));
-FA3: full_adder port map( A(2), B(2), Crazy(2), S(2), Crazy(3));
-FA4: full_adder port map( A(3), B(3), Crazy(3), S(3), Cout);
+FA1: full_adder port map( A(0), B(0), Cin, S(0), c(1));
+FA2: full_adder port map( A(1), B(1), c(1), S(1), c(2));
+FA3: full_adder port map( A(2), B(2), c(2), S(2), c(3));
+FA4: full_adder port map( A(3), B(3), c(3), S(3), Cout);
 
 end behavioral;

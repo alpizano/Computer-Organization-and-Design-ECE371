@@ -1,0 +1,28 @@
+libary ieee;
+use ieee.std_logic_1164.all;
+
+entity level_0 is
+port (A : in std_logic_vector(3 downto 0);
+      B : in std_logic_vector(3 downto 0);
+		Cin : in std_logic;
+		Cout : out std_logic;
+		S : out std_logic_vector(3 downto 0);
+);
+
+end entity level_0;
+
+architecture structure of level_0 is
+
+
+
+
+begin
+
+HA: entity work.half_adder(dataflow)
+port map(A =>A(0), B => B(0), Cout =>, Sum => S(0)); 
+
+FA: entity work.full_adder(dataflow)
+port map(
+
+
+end architecture structure;
