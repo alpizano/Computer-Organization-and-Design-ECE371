@@ -1,0 +1,444 @@
+$comment
+	File created using the following command:
+		vcd file cla_4bit.msim.vcd -direction
+$end
+$date
+	Sun Feb 10 02:51:11 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module cla_4bit_vhd_vec_tst $end
+$var wire 1 ! A [3] $end
+$var wire 1 " A [2] $end
+$var wire 1 # A [1] $end
+$var wire 1 $ A [0] $end
+$var wire 1 % B [3] $end
+$var wire 1 & B [2] $end
+$var wire 1 ' B [1] $end
+$var wire 1 ( B [0] $end
+$var wire 1 ) Cin $end
+$var wire 1 * Cout $end
+$var wire 1 + S [3] $end
+$var wire 1 , S [2] $end
+$var wire 1 - S [1] $end
+$var wire 1 . S [0] $end
+
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var wire 1 2 devoe $end
+$var wire 1 3 devclrn $end
+$var wire 1 4 devpor $end
+$var wire 1 5 ww_devoe $end
+$var wire 1 6 ww_devclrn $end
+$var wire 1 7 ww_devpor $end
+$var wire 1 8 ww_A [3] $end
+$var wire 1 9 ww_A [2] $end
+$var wire 1 : ww_A [1] $end
+$var wire 1 ; ww_A [0] $end
+$var wire 1 < ww_B [3] $end
+$var wire 1 = ww_B [2] $end
+$var wire 1 > ww_B [1] $end
+$var wire 1 ? ww_B [0] $end
+$var wire 1 @ ww_Cin $end
+$var wire 1 A ww_S [3] $end
+$var wire 1 B ww_S [2] $end
+$var wire 1 C ww_S [1] $end
+$var wire 1 D ww_S [0] $end
+$var wire 1 E ww_Cout $end
+$var wire 1 F \S[0]~output_o\ $end
+$var wire 1 G \S[1]~output_o\ $end
+$var wire 1 H \S[2]~output_o\ $end
+$var wire 1 I \S[3]~output_o\ $end
+$var wire 1 J \Cout~output_o\ $end
+$var wire 1 K \A[0]~input_o\ $end
+$var wire 1 L \B[0]~input_o\ $end
+$var wire 1 M \Cin~input_o\ $end
+$var wire 1 N \S~0_combout\ $end
+$var wire 1 O \B[1]~input_o\ $end
+$var wire 1 P \A[1]~input_o\ $end
+$var wire 1 Q \Cin_internal[1]~0_combout\ $end
+$var wire 1 R \Cin_internal[1]~1_combout\ $end
+$var wire 1 S \S~1_combout\ $end
+$var wire 1 T \A[2]~input_o\ $end
+$var wire 1 U \B[2]~input_o\ $end
+$var wire 1 V \Cin_internal[2]~2_combout\ $end
+$var wire 1 W \S~2_combout\ $end
+$var wire 1 X \A[3]~input_o\ $end
+$var wire 1 Y \B[3]~input_o\ $end
+$var wire 1 Z \Cin_internal[3]~3_combout\ $end
+$var wire 1 [ \S~3_combout\ $end
+$var wire 1 \ \Cout~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0)
+0*
+0/
+10
+x1
+12
+13
+14
+15
+16
+17
+0@
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0A
+0B
+0C
+0D
+0+
+0,
+0-
+0.
+$end
+#62500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#125000
+0$
+0(
+1#
+1'
+0;
+1:
+0?
+1>
+1O
+0L
+1P
+0K
+0Q
+1V
+1W
+0S
+0G
+1H
+0C
+1B
+0-
+1,
+#187500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#250000
+0$
+0(
+0#
+0'
+1"
+1&
+0;
+0:
+19
+0?
+0>
+1=
+1U
+0O
+0L
+1T
+0P
+0K
+0Q
+0V
+1Z
+1[
+0W
+0S
+0G
+0H
+1I
+0C
+0B
+1A
+0-
+0,
+1+
+#312500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#375000
+0$
+0(
+1#
+1'
+0;
+1:
+0?
+1>
+1O
+0L
+1P
+0K
+0Q
+1V
+1W
+0S
+0G
+1H
+0C
+1B
+0-
+1,
+#437500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#500000
+0$
+0(
+0#
+0'
+0"
+0&
+1!
+1%
+0;
+0:
+09
+18
+0?
+0>
+0=
+1<
+1Y
+0U
+0O
+0L
+1X
+0T
+0P
+0K
+0Q
+0V
+0Z
+1\
+0[
+0W
+0S
+1J
+1E
+0G
+0H
+0I
+1*
+0C
+0B
+0A
+0-
+0,
+0+
+#562500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#625000
+0$
+0(
+1#
+1'
+0;
+1:
+0?
+1>
+1O
+0L
+1P
+0K
+0Q
+1V
+1W
+0S
+0G
+1H
+0C
+1B
+0-
+1,
+#687500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#750000
+0$
+0(
+0#
+0'
+1"
+1&
+0;
+0:
+19
+0?
+0>
+1=
+1U
+0O
+0L
+1T
+0P
+0K
+0Q
+0V
+1Z
+1[
+0W
+0S
+0G
+0H
+1I
+0C
+0B
+1A
+0-
+0,
+1+
+#812500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#875000
+0$
+0(
+1#
+1'
+0;
+1:
+0?
+1>
+1O
+0L
+1P
+0K
+0Q
+1V
+1W
+0S
+0G
+1H
+0C
+1B
+0-
+1,
+#937500
+1$
+1(
+1;
+1?
+1L
+1K
+1Q
+1S
+1G
+1C
+1-
+#1000000

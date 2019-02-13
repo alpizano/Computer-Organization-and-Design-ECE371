@@ -1,0 +1,157 @@
+|cla_16bit
+A[0] => cla_4bit:cla_4bit_1.A[0]
+A[1] => cla_4bit:cla_4bit_1.A[1]
+A[2] => cla_4bit:cla_4bit_1.A[2]
+A[3] => cla_4bit:cla_4bit_1.A[3]
+A[4] => cla_4bit:cla_4bit_2.A[0]
+A[5] => cla_4bit:cla_4bit_2.A[1]
+A[6] => cla_4bit:cla_4bit_2.A[2]
+A[7] => cla_4bit:cla_4bit_2.A[3]
+A[8] => cla_4bit:cla_4bit_3.A[0]
+A[9] => cla_4bit:cla_4bit_3.A[1]
+A[10] => cla_4bit:cla_4bit_3.A[2]
+A[11] => cla_4bit:cla_4bit_3.A[3]
+A[12] => cla_4bit:cla_4bit_4.A[0]
+A[13] => cla_4bit:cla_4bit_4.A[1]
+A[14] => cla_4bit:cla_4bit_4.A[2]
+A[15] => cla_4bit:cla_4bit_4.A[3]
+B[0] => cla_4bit:cla_4bit_1.B[0]
+B[1] => cla_4bit:cla_4bit_1.B[1]
+B[2] => cla_4bit:cla_4bit_1.B[2]
+B[3] => cla_4bit:cla_4bit_1.B[3]
+B[4] => cla_4bit:cla_4bit_2.B[0]
+B[5] => cla_4bit:cla_4bit_2.B[1]
+B[6] => cla_4bit:cla_4bit_2.B[2]
+B[7] => cla_4bit:cla_4bit_2.B[3]
+B[8] => cla_4bit:cla_4bit_3.B[0]
+B[9] => cla_4bit:cla_4bit_3.B[1]
+B[10] => cla_4bit:cla_4bit_3.B[2]
+B[11] => cla_4bit:cla_4bit_3.B[3]
+B[12] => cla_4bit:cla_4bit_4.B[0]
+B[13] => cla_4bit:cla_4bit_4.B[1]
+B[14] => cla_4bit:cla_4bit_4.B[2]
+B[15] => cla_4bit:cla_4bit_4.B[3]
+Cin => cla_4bit:cla_4bit_1.Cin
+Cout <= cla_4bit:cla_4bit_4.Cout
+S[0] <= cla_4bit:cla_4bit_1.S[0]
+S[1] <= cla_4bit:cla_4bit_1.S[1]
+S[2] <= cla_4bit:cla_4bit_1.S[2]
+S[3] <= cla_4bit:cla_4bit_1.S[3]
+S[4] <= cla_4bit:cla_4bit_2.S[0]
+S[5] <= cla_4bit:cla_4bit_2.S[1]
+S[6] <= cla_4bit:cla_4bit_2.S[2]
+S[7] <= cla_4bit:cla_4bit_2.S[3]
+S[8] <= cla_4bit:cla_4bit_3.S[0]
+S[9] <= cla_4bit:cla_4bit_3.S[1]
+S[10] <= cla_4bit:cla_4bit_3.S[2]
+S[11] <= cla_4bit:cla_4bit_3.S[3]
+S[12] <= cla_4bit:cla_4bit_4.S[0]
+S[13] <= cla_4bit:cla_4bit_4.S[1]
+S[14] <= cla_4bit:cla_4bit_4.S[2]
+S[15] <= cla_4bit:cla_4bit_4.S[3]
+
+
+|cla_16bit|cla_4bit:cla_4bit_1
+A[0] => G[0].IN0
+A[0] => P[0].IN0
+A[1] => G[1].IN0
+A[1] => P[1].IN0
+A[2] => G[2].IN0
+A[2] => P[2].IN0
+A[3] => G[3].IN0
+A[3] => P[3].IN0
+B[0] => G[0].IN1
+B[0] => P[0].IN1
+B[1] => G[1].IN1
+B[1] => P[1].IN1
+B[2] => G[2].IN1
+B[2] => P[2].IN1
+B[3] => G[3].IN1
+B[3] => P[3].IN1
+Cin => Cin_internal.IN1
+Cin => S.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_16bit|cla_4bit:cla_4bit_2
+A[0] => G[0].IN0
+A[0] => P[0].IN0
+A[1] => G[1].IN0
+A[1] => P[1].IN0
+A[2] => G[2].IN0
+A[2] => P[2].IN0
+A[3] => G[3].IN0
+A[3] => P[3].IN0
+B[0] => G[0].IN1
+B[0] => P[0].IN1
+B[1] => G[1].IN1
+B[1] => P[1].IN1
+B[2] => G[2].IN1
+B[2] => P[2].IN1
+B[3] => G[3].IN1
+B[3] => P[3].IN1
+Cin => Cin_internal.IN1
+Cin => S.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_16bit|cla_4bit:cla_4bit_3
+A[0] => G[0].IN0
+A[0] => P[0].IN0
+A[1] => G[1].IN0
+A[1] => P[1].IN0
+A[2] => G[2].IN0
+A[2] => P[2].IN0
+A[3] => G[3].IN0
+A[3] => P[3].IN0
+B[0] => G[0].IN1
+B[0] => P[0].IN1
+B[1] => G[1].IN1
+B[1] => P[1].IN1
+B[2] => G[2].IN1
+B[2] => P[2].IN1
+B[3] => G[3].IN1
+B[3] => P[3].IN1
+Cin => Cin_internal.IN1
+Cin => S.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cla_16bit|cla_4bit:cla_4bit_4
+A[0] => G[0].IN0
+A[0] => P[0].IN0
+A[1] => G[1].IN0
+A[1] => P[1].IN0
+A[2] => G[2].IN0
+A[2] => P[2].IN0
+A[3] => G[3].IN0
+A[3] => P[3].IN0
+B[0] => G[0].IN1
+B[0] => P[0].IN1
+B[1] => G[1].IN1
+B[1] => P[1].IN1
+B[2] => G[2].IN1
+B[2] => P[2].IN1
+B[3] => G[3].IN1
+B[3] => P[3].IN1
+Cin => Cin_internal.IN1
+Cin => S.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
