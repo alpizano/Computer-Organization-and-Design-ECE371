@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cla_16bit
-Mon Feb 11 01:49:42 2019
+Tue Feb 12 23:14:03 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb 11 01:49:42 2019       ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 12 23:14:03 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; cla_16bit                                   ;
 ; Top-level Entity Name              ; cla_16bit                                   ;
@@ -67,6 +67,9 @@ refer to the applicable agreement for further details.
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                                      ; cla_16bit          ; cla_16bit          ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                        ; All                ;                    ;
+; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
+; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -75,7 +78,6 @@ refer to the applicable agreement for further details.
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
 ; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
 ; Safe State Machine                                                         ; Off                ; Off                ;
 ; Extract Verilog State Machines                                             ; On                 ; On                 ;
@@ -264,9 +266,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Feb 11 01:49:33 2019
+    Info: Processing started: Tue Feb 12 23:13:51 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cla_16bit -c cla_16bit
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file cla_4bit.vhd
     Info (12022): Found design unit 1: cla_4bit-dataflow File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex1 - 16bit CLA/cla_4bit.vhd Line: 18
@@ -283,10 +284,10 @@ Info (21057): Implemented 89 device resources after synthesis - the final resour
     Info (21058): Implemented 33 input pins
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 39 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Mon Feb 11 01:49:42 2019
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Tue Feb 12 23:14:03 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:24
 
 

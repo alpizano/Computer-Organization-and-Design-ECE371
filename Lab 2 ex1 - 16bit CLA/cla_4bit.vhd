@@ -22,12 +22,17 @@ architecture dataflow of cla_4bit is
 signal G : std_logic_vector(3 downto 0); --carry Generate
 signal P : std_logic_vector(3 downto 0); --carry Propagate
 signal Cin_internal: std_logic_vector(3 downto 1);
+signal sum : std_logic_vector(3 downto 0);
+
 		
-begin
+		
+		begin
      --implementation portion of the architecture 
 	  
 G <= A AND B; 
 P <= A XOR B;
+sum <= A XOR B;
+
 
  
 Cin_internal(1) <= G(0) OR ( P(0) AND Cin );  
@@ -41,8 +46,8 @@ ripple: for i in 1 to 2 generate
 
 Cout <= G(3) OR ( P(3) AND Cin_internal(3) );
 
-S(0) <= A(0) XOR B(0) XOR Cin;
+S(0) <= sum(0) XOR Cin;
 
-S(3 downto 1) <= A(3 downto 1) XOR B (3 downto 1) XOR Cin_internal;
+S(3 downto 1) <= sum(3 downto 1) XOR Cin_internal(3 downto 1);
     
 end architecture dataflow;  

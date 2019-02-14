@@ -1,5 +1,5 @@
 EDA Netlist Writer report for comp_8bit
-Mon Feb 11 18:23:26 2019
+Tue Feb 12 23:42:07 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Feb 11 18:23:26 2019 ;
+; EDA Netlist Writer Status ; Successful - Tue Feb 12 23:42:07 2019 ;
 ; Revision Name             ; comp_8bit                             ;
 ; Top-level Entity Name     ; comp_8bit                             ;
 ; Family                    ; Cyclone IV E                          ;
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Feb 11 18:23:26 2019
+    Info: Processing started: Tue Feb 12 23:42:06 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex2 - comp_8bit_w_process/simulation/qsim/" comp_8bit -c comp_8bit
 Info (119006): Selected device EP4CE115F29C7 for design "comp_8bit"
 Info (204019): Generated file comp_8bit.vho in folder "G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex2 - comp_8bit_w_process/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4664 megabytes
-    Info: Processing ended: Mon Feb 11 18:23:26 2019
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Tue Feb 12 23:42:07 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

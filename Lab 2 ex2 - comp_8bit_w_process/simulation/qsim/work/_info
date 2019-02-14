@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex2 - comp_8bit_w_process/simulation/qsim
 Ecomp_8bit
-Z1 w1549931006
+Z1 w1550036527
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ VFbF[IZYJ9FF;RiY2I1?J[3
 !s100 <oYlZ?PhMj1LmnlkY_]Z70
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1549931007
+Z11 !s110 1550036528
 !i10b 1
-Z12 !s108 1549931007.000000
+Z12 !s108 1550036528.000000
 Z13 !s90 -work|work|comp_8bit.vho|
 Z14 !s107 comp_8bit.vho|
 !i113 1
@@ -56,7 +56,7 @@ R14
 R15
 R16
 Ecomp_8bit_vhd_vec_tst
-Z17 w1549931005
+Z17 w1550036526
 R5
 R6
 R0
@@ -82,8 +82,8 @@ R6
 Z22 DEx4 work 21 comp_8bit_vhd_vec_tst 0 22 hAD1lf8N@E@:oMEC6HAh^0
 l50
 L33
-Vjj4]@;<K^kIBF@AWiaf[G0
-!s100 mBZ6DRio51GK_e?FKg1`22
+V=>TgWU`jFhZ4AWhh>dFPU1
+!s100 =GakeH8gaJUFQ;0KbhC7I2
 R10
 32
 R11

@@ -1,5 +1,5 @@
 Flow report for multi_5bit
-Tue Feb 12 20:56:36 2019
+Tue Feb 12 23:50:40 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 12 20:56:36 2019       ;
+; Flow Status                        ; Successful - Tue Feb 12 23:50:40 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; multi_5bit                                  ;
 ; Top-level Entity Name              ; multi_5bit                                  ;
@@ -97,7 +97,9 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4809 MB             ; 00:00:18                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:18                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4661 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4666 MB             ; 00:00:01                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,6 +109,8 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-OS08J4I  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-OS08J4I  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-OS08J4I  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -114,6 +118,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off multi_5bit -c multi_5bit
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off multi_5bit -c multi_5bit --vector_source="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multi 5bit -correct/Waveform.vwf" --testbench_file="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multi 5bit -correct/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex3 - multi 5bit -correct/simulation/qsim/" multi_5bit -c multi_5bit
 
 
 

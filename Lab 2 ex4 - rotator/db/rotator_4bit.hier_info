@@ -1,5 +1,199 @@
 |rotator_4bit
-A => ~NO_FANOUT~
-B <= comb.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => mux4_1:mux3_r.A[2]
+A[0] => mux4_1:mux2_r.A[1]
+A[0] => mux4_1:mux1_r.A[0]
+A[0] => mux4_1:mux0_r.A[3]
+A[0] => mux4_1:mux3_l.A[0]
+A[0] => mux4_1:mux2_l.A[1]
+A[0] => mux4_1:mux1_l.A[2]
+A[0] => mux4_1:mux0_l.A[3]
+A[1] => mux4_1:mux3_r.A[1]
+A[1] => mux4_1:mux2_r.A[0]
+A[1] => mux4_1:mux1_r.A[3]
+A[1] => mux4_1:mux0_r.A[2]
+A[1] => mux4_1:mux3_l.A[1]
+A[1] => mux4_1:mux2_l.A[2]
+A[1] => mux4_1:mux1_l.A[3]
+A[1] => mux4_1:mux0_l.A[0]
+A[2] => mux4_1:mux3_r.A[0]
+A[2] => mux4_1:mux2_r.A[3]
+A[2] => mux4_1:mux1_r.A[2]
+A[2] => mux4_1:mux0_r.A[1]
+A[2] => mux4_1:mux3_l.A[2]
+A[2] => mux4_1:mux2_l.A[3]
+A[2] => mux4_1:mux1_l.A[0]
+A[2] => mux4_1:mux0_l.A[1]
+A[3] => mux4_1:mux3_r.A[3]
+A[3] => mux4_1:mux2_r.A[2]
+A[3] => mux4_1:mux1_r.A[1]
+A[3] => mux4_1:mux0_r.A[0]
+A[3] => mux4_1:mux3_l.A[3]
+A[3] => mux4_1:mux2_l.A[0]
+A[3] => mux4_1:mux1_l.A[1]
+A[3] => mux4_1:mux0_l.A[2]
+L => mux2_1:mux_3.S
+L => mux2_1:mux_2.S
+L => mux2_1:mux_1.S
+L => mux2_1:mux_0.S
+shift[0] => mux4_1:mux3_r.S[0]
+shift[0] => mux4_1:mux2_r.S[0]
+shift[0] => mux4_1:mux1_r.S[0]
+shift[0] => mux4_1:mux0_r.S[0]
+shift[0] => mux4_1:mux3_l.S[0]
+shift[0] => mux4_1:mux2_l.S[0]
+shift[0] => mux4_1:mux1_l.S[0]
+shift[0] => mux4_1:mux0_l.S[0]
+shift[1] => mux4_1:mux3_r.S[1]
+shift[1] => mux4_1:mux2_r.S[1]
+shift[1] => mux4_1:mux1_r.S[1]
+shift[1] => mux4_1:mux0_r.S[1]
+shift[1] => mux4_1:mux3_l.S[1]
+shift[1] => mux4_1:mux2_l.S[1]
+shift[1] => mux4_1:mux1_l.S[1]
+shift[1] => mux4_1:mux0_l.S[1]
+Y[0] << mux2_1:mux_0.Y
+Y[1] << mux2_1:mux_1.Y
+Y[2] << mux2_1:mux_2.Y
+Y[3] << mux2_1:mux_3.Y
+
+
+|rotator_4bit|mux4_1:mux3_r
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux4_1:mux2_r
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux4_1:mux1_r
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux4_1:mux0_r
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux4_1:mux3_l
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux4_1:mux2_l
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux4_1:mux1_l
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux4_1:mux0_l
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAB
+S[0] => Equal0.IN0
+S[0] => Equal1.IN1
+S[0] => Equal2.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN0
+S[1] => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux2_1:mux_3
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux2_1:mux_2
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux2_1:mux_1
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotator_4bit|mux2_1:mux_0
+A[0] => Y.DATAA
+A[1] => Y.DATAB
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 

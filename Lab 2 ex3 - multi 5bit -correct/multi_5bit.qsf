@@ -60,3 +60,4 @@ set_global_assignment -name VHDL_FILE half_adder.vhd
 set_global_assignment -name VHDL_FILE full_adder.vhd
 set_global_assignment -name VHDL_FILE multi_5bit.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf

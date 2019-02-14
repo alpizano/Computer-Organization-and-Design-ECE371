@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 2 ex4 - rotator/simulation/qsim
+Erotator_4bit
+Z1 w1550037798
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8rotator_4bit.vho
+Z9 Frotator_4bit.vho
+l0
+L34
+VhzBJ;LfUH>li[=z=AHN3n3
+!s100 S^><8=PT79NAUo>;213mT2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1550037798
+!i10b 1
+Z12 !s108 1550037798.000000
+Z13 !s90 -work|work|rotator_4bit.vho|
+Z14 !s107 rotator_4bit.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 12 rotator_4bit 0 22 hzBJ;LfUH>li[=z=AHN3n3
+l79
+L43
+VIjmJV<W=;Afa2FaWZTVDi2
+!s100 EafVb>eg>eGFm?;HX1QFX0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Erotator_4bit_vhd_vec_tst
+Z17 w1550037797
+R5
+R6
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+V[h=7fBGJ7AbClo0ldhESQ0
+!s100 2L:9bl;VCPO`K;;<REWaY1
+R10
+32
+Z20 !s110 1550037799
+!i10b 1
+Z21 !s108 1550037799.000000
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Arotator_4bit_arch
+R5
+R6
+DEx4 work 24 rotator_4bit_vhd_vec_tst 0 22 [h=7fBGJ7AbClo0ldhESQ0
+l48
+L33
+VD>dPZ]5B[RRYFcNo[kg`A0
+!s100 AkoZgU7Z?@0MFeACl<blT3
+R10
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R15
+R16
