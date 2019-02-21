@@ -1,0 +1,8 @@
+|jk_ff
+clk => qtemp.CLK
+jk[0] => Mux0.IN3
+jk[1] => Mux0.IN2
+q <= qtemp.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qtemp.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity jk_ff is
+
+port (D : in std_logic;
+      CLK : in std_logic;
+		Q : out std_logic;
+	   Qnot: out std_logic
+		);
+		
+end entity jk_ff;
+
+
+architecture ff of jk_ff is
+
+
+begin
+
+
+
+end architecture ff;
