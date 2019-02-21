@@ -4,15 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Q[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Sin[0]",
+					"name" : "Sout",
 					"strict" : false
 				},
 				{
 					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "Sin",
 					"strict" : false
 				}
 			]
