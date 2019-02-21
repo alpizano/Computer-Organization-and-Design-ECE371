@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Feb 21 03:16:33 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : johnson_nbit
+Top-level Entity Name : johnson_nbit
+Family : Cyclone IV E
+Total logic elements : 4
+    Total combinational functions : 1
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
