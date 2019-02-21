@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use ieee.std_logic_unsigned.all;
+entity gray_counter is
+port(clk, reset: in std_logic;
+dout: out std_logic_vector(2 downto 0));
+end gray_counter;
+
+architecture Behavioral of gray_counter is
+signal temp: std_logic_vector(2 downto 0);
+signal temp_gray: std_logic_vector(2 downto 0);
+begin
+process(clk, reset)
+begin
+if(reset='1') then temp<="000";
+elsif(clk'event and clk='1') then
+temp<= temp+1;
+end if;
+end process;
+process(temp)
+begin
+temp_gray(2)<=temp(2);
+temp_gray(1)<= temp(1) xor temp(2);
+temp_gray(0)<= temp(1) xor temp(0);
+end process;
+dout<=temp_gray;
+end Behavioral;
