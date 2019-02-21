@@ -1,0 +1,13 @@
+|gen_shift_reg
+CLK => d_ff:d_ff_stages:0:d_ff.CLK
+Sin[0] => d_ff:d_ff_stages:0:d_ff.D
+Sout << comb.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] << d_ff:d_ff_stages:0:d_ff.Q
+
+
+|gen_shift_reg|d_ff:\d_ff_stages:0:d_ff
+CLK => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

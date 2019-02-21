@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex2 - shift register/simulation/qsim
+Egen_shift_reg
+Z1 w1550733066
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z10 8gen_shift_reg.vho
+Z11 Fgen_shift_reg.vho
+l0
+L36
+V^cQ:Q4;bFmo>eW`RRdK?<0
+!s100 Fz8SGT=ID^XY9LAJKe^b21
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1550733067
+!i10b 1
+Z14 !s108 1550733067.000000
+Z15 !s90 -work|work|gen_shift_reg.vho|
+Z16 !s107 gen_shift_reg.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 13 gen_shift_reg 0 22 ^cQ:Q4;bFmo>eW`RRdK?<0
+l65
+L45
+Vej9YLRj2>92HLTASJ<ka]0
+!s100 jXUYFnE:iW79E5_dj8HfC2
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Egen_shift_reg_vhd_vec_tst
+w1550733065
+R7
+R8
+R0
+8Waveform.vwf.vht
+FWaveform.vwf.vht
+l0
+L31
+VfIaBf8M0P_jS<zHV7zlIF2
+!s100 3[f2nFEe0XOaFDd;M^>d11
+R12
+32
+R13
+!i10b 1
+R14
+!s90 -work|work|Waveform.vwf.vht|
+!s107 Waveform.vwf.vht|
+!i113 1
+R17
+R18

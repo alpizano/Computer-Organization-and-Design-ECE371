@@ -1,0 +1,17 @@
+library ieee;
+use iee.std_logic_1164.all;
+
+entity gen_shift_reg is
+
+port(
+
+);
+
+end entity gen_shift_reg;
+
+architecture dataflow of gen_shift_reg is
+
+
+begin
+
+end architecture dataflow;
