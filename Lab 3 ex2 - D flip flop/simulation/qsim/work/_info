@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex2 - D flip flop/simulation/qsim
+Ed_ff
+Z1 w1550734681
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z10 8d_ff.vho
+Z11 Fd_ff.vho
+l0
+L36
+V97bJNK20PkjR_B5G<=:;60
+!s100 WNBhdl>5MbUUz:e772g2P3
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1550734681
+!i10b 1
+Z14 !s108 1550734681.000000
+Z15 !s90 -work|work|d_ff.vho|
+Z16 !s107 d_ff.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 4 d_ff 0 22 97bJNK20PkjR_B5G<=:;60
+l62
+L44
+VDUb5IS:=zi0gf0j7BnA6k1
+!s100 I[E]bFU0XT9ZQeGL8OcPi3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Ed_ff_vhd_vec_tst
+Z19 w1550734680
+R7
+R8
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+VlmlB8>fAcN?f7a@;mOAi22
+!s100 _FZ_1_9OTN_zM?<Qdb5lV1
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R17
+R18
+Ad_ff_arch
+R7
+R8
+DEx4 work 16 d_ff_vhd_vec_tst 0 22 lmlB8>fAcN?f7a@;mOAi22
+l46
+L33
+V4^^_SMelFc<aE[F@IQRN51
+!s100 I7Lf52WGjoWK<H4]W6JSi1
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 1
+R17
+R18
