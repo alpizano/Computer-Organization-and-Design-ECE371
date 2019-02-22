@@ -2,37 +2,44 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity johnson_nbit is
-port ( clk : in std_logic;
-	    rst : in std_logic;
-	    Q   : out std_logic_vector(3 downto 0)
-	   );
-	
-	end entity;
 
-	architecture Behavioral of johnson_nbit is
-	
-	signal temp: std_logic_vector(3 downto 0):= "0000";
-	
-	begin
-	
-		process(clk,rst)
-	
-		begin
-	
-			if rst = '1' then
+generic ( N : integer := 4 );
 
-				temp <= "0000";
+port ( 
+       clk: in std_logic; -- clock
+       clr: in std_logic; -- clear
+       Qout: out std_logic_vector(N-1 downto 0) -- output
+ 
+      );
+		
+end entity johnson_nbit;
 
-					elsif Rising_edge(clk) then
 
-						temp(1) <= temp(0);
-						temp(2) <= temp(1);
-						temp(3) <= temp(2);
-						temp(0) <= not temp(3);
+architecture behavioral of johnson_nbit is
 
+signal Qbar: std_logic;
+
+signal Q : std_logic_vector(N-1 downto 0) := (others => '0');
+
+begin
+
+Qbar <= not Q(N-1);
+
+			process(CLK, clr)
+
+				begin
+					if(clr = '1') then 
+ 
+					Q <= (others => '0');
+ 
+					elsif(rising_edge(CLK)) then
+ 
+					Q <= Q(N-2 downto 0) & Qbar; 
+ 
 					end if;
-		end process;
+ 
+			end process;
 
-	Q <= temp;
+	Qout <= Q;
 
-end Behavioral;
+end architecture behavioral;

@@ -4,19 +4,19 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Q[0]",
+					"name" : "Qout[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[1]",
+					"name" : "Qout[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[2]",
+					"name" : "Qout[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Q[3]",
+					"name" : "Qout[3]",
 					"strict" : false
 				},
 				{
@@ -24,7 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "clr",
 					"strict" : false
 				}
 			]

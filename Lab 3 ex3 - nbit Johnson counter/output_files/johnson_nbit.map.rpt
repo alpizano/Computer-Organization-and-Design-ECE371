@@ -1,5 +1,5 @@
 Analysis & Synthesis report for johnson_nbit
-Thu Feb 21 03:16:34 2019
+Thu Feb 21 18:04:20 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |johnson_nbit
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 21 03:16:33 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 21 18:04:20 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; johnson_nbit                                ;
 ; Top-level Entity Name              ; johnson_nbit                                ;
@@ -230,6 +231,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |johnson_nbit ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; N              ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -262,12 +273,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Feb 21 03:16:24 2019
+    Info: Processing started: Thu Feb 21 18:04:10 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off johnson_nbit -c johnson_nbit
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file johnson_nbit.vhd
-    Info (12022): Found design unit 1: johnson_nbit-Behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/johnson_nbit.vhd Line: 12
+    Info (12022): Found design unit 1: johnson_nbit-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/johnson_nbit.vhd Line: 18
     Info (12023): Found entity 1: johnson_nbit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/johnson_nbit.vhd Line: 4
+Warning (12019): Can't analyze file -- file d_ff.vhd is missing
 Info (12127): Elaborating entity "johnson_nbit" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -276,9 +288,9 @@ Info (21057): Implemented 10 device resources after synthesis - the final resour
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4840 megabytes
-    Info: Processing ended: Thu Feb 21 03:16:34 2019
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Thu Feb 21 18:04:20 2019
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:19
 
