@@ -1,0 +1,150 @@
+Determining the location of the ModelSim executable...
+
+Using: d:/intelfpga_lite/17.1/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off johnson_nbit -c johnson_nbit --vector_source="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/Waveform.vwf" --testbench_file="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim/Waveform.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Feb 21 19:13:18 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off johnson_nbit -c johnson_nbit --vector_source="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/Waveform.vwf" --testbench_file="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim/Waveform.vwf.vht"
+Info (119006): Selected device EP4CE115F29C7 for design "johnson_nbit"
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim/" johnson_nbit -c johnson_nbit
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Feb 21 19:13:20 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim/" johnson_nbit -c johnson_nbit
+Info (119006): Selected device EP4CE115F29C7 for design "johnson_nbit"
+Info (204019): Generated file johnson_nbit.vho in folder "G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4666 megabytes
+    Info: Processing ended: Thu Feb 21 19:13:20 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim/johnson_nbit.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+d:/intelfpga_lite/17.1/modelsim_ase/win32aloem//vsim -c -do johnson_nbit.do
+
+Reading D:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do johnson_nbit.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:21 on Feb 21,2019
+# vcom -work work johnson_nbit.vho 
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity johnson_nbit
+# -- Compiling architecture structure of johnson_nbit
+# End time: 19:13:21 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:21 on Feb 21,2019
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity johnson_nbit_vhd_vec_tst
+# -- Compiling architecture johnson_nbit_arch of johnson_nbit_vhd_vec_tst
+
+# End time: 19:13:21 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.johnson_nbit_vhd_vec_tst 
+# Start time: 19:13:21 on Feb 21,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.johnson_nbit_vhd_vec_tst(johnson_nbit_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.johnson_nbit(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading altera.dffeas(vital_dffeas)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# after#31
+
+# End time: 19:13:21 on Feb 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/Waveform.vwf...
+
+Reading G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim/johnson_nbit.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 3 ex3 - nbit Johnson counter/simulation/qsim/johnson_nbit_20190221191322.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

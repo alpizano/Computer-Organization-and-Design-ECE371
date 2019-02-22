@@ -1,0 +1,14 @@
+|t_ff
+T => jk_ff:jk_ff.JK[1]
+T => jk_ff:jk_ff.JK[0]
+CLK => jk_ff:jk_ff.clk
+Q <= jk_ff:jk_ff.Q
+
+
+|t_ff|jk_ff:jk_ff
+clk => qtemp.CLK
+JK[0] => Mux0.IN4
+JK[1] => Mux0.IN3
+Q <= qtemp.DB_MAX_OUTPUT_PORT_TYPE
+
+
