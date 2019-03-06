@@ -18,11 +18,12 @@ end entity;
 architecture rtl of adv_game is
 
 	-- Build an enumerated type for the state machine
-	type state_type is (CC, TT, RR, SS, DD, VV, GG);
+	type state_type is (CC, TT, RR, SS, DD, VV, GG); -- 7 total states
 
 	-- Register to hold the current state
 	signal state : state_type;
-
+	signal v : std_logic; --signal for vorpal sword, '1' = has sword, '0' = no sword
+	
 begin
 
 	process (clk, reset)
@@ -67,8 +68,25 @@ begin
 					if e = '1' then
 						state <= RR;
 					else
-						state <= s1;
+						state <= SS;
 					end if;
+					
+				when DD=>
+					if v = '1' then
+						state <= VV; -- go to victory vault if have sword (v = '1')
+						
+					elsif v = '0' then
+						state <= GG; -- go to grievous gravard if no vorpal sword (v = '0')
+					else
+					   state <= DD;
+					end if;
+					
+				when VV=>
+				   state <= CC; -- when you win the game, go back to CC and start over
+					
+			   when GG=>
+				   state <= CC; -- -- when you win the game, go back to CC and start over
+					
 			end case;
 
 		end if;
@@ -76,33 +94,38 @@ begin
 
 	-- Determine the output based only on the current state
 	-- and the input (do not wait for a clock edge).
-	process (state, input)
+	process (state, sw)
 	begin
 			case state is
-				when s0=>
-					if input = '1' then
-						output <= "00";
+			-- MOORE outputs
+				when CC => sw <= '0';
+				when TT => sw <= '0';
+				
+			
+				when SS => sw <= '1'; --when you find vorpal sword in SS
+				
+				when RR => sw <= '0';
+				
+				
+				-- MEELY output
+				when DD =>
+					if sw = '1' then
+						v <= '1';
 					else
-						output <= "01";
+						v <= '0';
 					end if;
-				when s1=>
-					if input = '1' then
-						output <= "01";
-					else
-						output <= "11";
-					end if;
-				when s2=>
-					if input = '1' then
-						output <= "10";
-					else
-						output <= "10";
-					end if;
-				when s3=>
-					if input = '1' then
-						output <= "11";
-					else
-						output <= "10";
-					end if;
+					
+				when VV => win <= '1';
+				when GG=> d <= '1';
+			
+		   
+				--when s3=>
+					--if input = '1' then
+						--output <= "11";
+					--else
+						--output <= "10";
+					--end if;
+					
 			end case;
 	end process;
 

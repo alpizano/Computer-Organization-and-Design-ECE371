@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 06 06:38:39 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : adv_game
+Top-level Entity Name : adv_game
+Family : Cyclone IV E
+Total logic elements : 15
+    Total combinational functions : 15
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

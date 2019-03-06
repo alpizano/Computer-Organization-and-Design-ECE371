@@ -1,0 +1,26 @@
+|adv_game
+clk => state~3.DATAIN
+n => state.DATAA
+n => state.DATAA
+s => state.OUTPUTSELECT
+s => state.OUTPUTSELECT
+s => Selector3.IN3
+e => state.OUTPUTSELECT
+e => state.OUTPUTSELECT
+e => state.DATAA
+e => Selector2.IN4
+e => Selector3.IN4
+e => Selector1.IN2
+e => Selector4.IN1
+w => state.DATAA
+w => state.OUTPUTSELECT
+w => state.OUTPUTSELECT
+w => state.OUTPUTSELECT
+w => Selector4.IN3
+w => state.DATAA
+reset => state~5.DATAIN
+sw <= sw$latch.DB_MAX_OUTPUT_PORT_TYPE
+d <= <VCC>
+win <= <VCC>
+
+

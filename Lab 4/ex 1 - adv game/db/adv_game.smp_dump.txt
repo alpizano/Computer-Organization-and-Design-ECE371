@@ -1,0 +1,10 @@
+
+State Machine - |adv_game|state
+Name state.GG state.VV state.DD state.SS state.RR state.TT state.CC 
+state.CC 0 0 0 0 0 0 0 
+state.TT 0 0 0 0 0 1 1 
+state.RR 0 0 0 0 1 0 1 
+state.SS 0 0 0 1 0 0 1 
+state.DD 0 0 1 0 0 0 1 
+state.VV 0 1 0 0 0 0 1 
+state.GG 1 0 0 0 0 0 1 
