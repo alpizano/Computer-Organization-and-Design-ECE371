@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 07 17:47:44 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : tbird_lights
+Top-level Entity Name : tbird_lights
+Family : Cyclone IV E
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
