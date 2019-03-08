@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tbird_lights
-Thu Mar 07 17:47:44 2019
+Thu Mar 07 21:33:22 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,11 +13,13 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |tbird_lights|CURRENT_STATE
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. State Machine - |tbird_lights|NEXT_STATE
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +45,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 07 17:47:44 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 07 21:33:22 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; tbird_lights                                ;
 ; Top-level Entity Name              ; tbird_lights                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 20                                          ;
-;     Total combinational functions  ; 20                                          ;
-;     Dedicated logic registers      ; 8                                           ;
-; Total registers                    ; 8                                           ;
-; Total pins                         ; 10                                          ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 11                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -157,11 +159,10 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -174,36 +175,35 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 20      ;
-;                                             ;         ;
-; Total combinational functions               ; 20      ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 12      ;
-;     -- 3 input functions                    ; 5       ;
-;     -- <=2 input functions                  ; 3       ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 20      ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 8       ;
-;     -- Dedicated logic registers            ; 8       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 10      ;
-;                                             ;         ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-;                                             ;         ;
-; Maximum fan-out node                        ; H~input ;
-; Maximum fan-out                             ; 10      ;
-; Total fan-out                               ; 101     ;
-; Average fan-out                             ; 2.10    ;
-+---------------------------------------------+---------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+;                                             ;           ;
+; Total combinational functions               ; 0         ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 0         ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 0         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 0         ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 0         ;
+;     -- Dedicated logic registers            ; 0         ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 11        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; LC~output ;
+; Maximum fan-out                             ; 1         ;
+; Total fan-out                               ; 11        ;
+; Average fan-out                             ; 0.50      ;
++---------------------------------------------+-----------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,26 +211,43 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; |tbird_lights              ; 20 (20)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |tbird_lights       ; tbird_lights ; work         ;
+; |tbird_lights              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |tbird_lights       ; tbird_lights ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |tbird_lights|CURRENT_STATE                                                                                                                              ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; Name             ; CURRENT_STATE.s7 ; CURRENT_STATE.s6 ; CURRENT_STATE.s5 ; CURRENT_STATE.s4 ; CURRENT_STATE.s3 ; CURRENT_STATE.s2 ; CURRENT_STATE.s1 ; CURRENT_STATE.s0 ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
-; CURRENT_STATE.s0 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
-; CURRENT_STATE.s1 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
-; CURRENT_STATE.s2 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
-; CURRENT_STATE.s3 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
-; CURRENT_STATE.s4 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
-; CURRENT_STATE.s5 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; CURRENT_STATE.s6 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-; CURRENT_STATE.s7 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |tbird_lights|NEXT_STATE                                                                                                      ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; Name          ; NEXT_STATE.s7 ; NEXT_STATE.s6 ; NEXT_STATE.s5 ; NEXT_STATE.s4 ; NEXT_STATE.s3 ; NEXT_STATE.s2 ; NEXT_STATE.s1 ; NEXT_STATE.s0 ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; NEXT_STATE.s0 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; NEXT_STATE.s1 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
+; NEXT_STATE.s2 ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
+; NEXT_STATE.s3 ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
+; NEXT_STATE.s4 ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
+; NEXT_STATE.s5 ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; NEXT_STATE.s6 ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; NEXT_STATE.s7 ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; NEXT_STATE.s0                         ; Lost fanout        ;
+; NEXT_STATE.s1                         ; Lost fanout        ;
+; NEXT_STATE.s2                         ; Lost fanout        ;
+; NEXT_STATE.s3                         ; Lost fanout        ;
+; NEXT_STATE.s4                         ; Lost fanout        ;
+; NEXT_STATE.s5                         ; Lost fanout        ;
+; NEXT_STATE.s6                         ; Lost fanout        ;
+; NEXT_STATE.s7                         ; Lost fanout        ;
+; Total Number of Removed Registers = 8 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -238,7 +255,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -248,23 +265,27 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |tbird_lights|NEXT_STATE   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 8                           ;
-;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 23                          ;
-;     normal            ; 23                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 12                          ;
+; boundary_port         ; 11                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.94                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -283,24 +304,38 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Mar 07 17:47:34 2019
+    Info: Processing started: Thu Mar 07 21:33:13 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tbird_lights -c tbird_lights
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file tbird_lights.vhd
-    Info (12022): Found design unit 1: tbird_lights-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 13
+    Info (12022): Found design unit 1: tbird_lights-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 14
     Info (12023): Found entity 1: tbird_lights File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 4
 Info (12127): Elaborating entity "tbird_lights" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
+Warning (10541): VHDL Signal Declaration warning at tbird_lights.vhd(17): used implicit default value for signal "CURRENT_STATE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 17
+Warning (10036): Verilog HDL or VHDL warning at tbird_lights.vhd(17): object "NEXT_STATE" assigned a value but never read File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 17
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LC" is stuck at GND File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 11
+    Warning (13410): Pin "LB" is stuck at GND File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 11
+    Warning (13410): Pin "LA" is stuck at GND File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 11
+    Warning (13410): Pin "RA" is stuck at GND File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 11
+    Warning (13410): Pin "RB" is stuck at GND File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 11
+    Warning (13410): Pin "RC" is stuck at GND File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 11
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "L" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 6
+    Warning (15610): No output dependent on input pin "R" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 7
+    Warning (15610): No output dependent on input pin "S" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 8
+    Warning (15610): No output dependent on input pin "CLK" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 9
+    Warning (15610): No output dependent on input pin "reset" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd Line: 10
+Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 20 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Thu Mar 07 17:47:44 2019
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Thu Mar 07 21:33:22 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 

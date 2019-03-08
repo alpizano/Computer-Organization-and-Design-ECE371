@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/simulation/modelsim
+Etbird_lights
+Z1 w1552014790
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd
+Z5 FG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd
+l0
+L4
+Ve?6daMJzQ]W1MN;`;9j[20
+!s100 C2cjIk03UzS4REPCMomUg2
+Z6 OV;C;10.5b;63
+33
+Z7 !s110 1552016039
+!i10b 1
+Z8 !s108 1552016039.000000
+Z9 !s90 -reportprogress|300|-2008|-work|work|G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd|
+Z10 !s107 G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/tbird_lights.vhd|
+!i113 1
+Z11 o-2008 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 12 tbird_lights 0 22 e?6daMJzQ]W1MN;`;9j[20
+l19
+L14
+Vo5SVKb<4X0eSIiR`>QUm71
+!s100 S4^hzBQZ8T7;zV_NTfgH23
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etbird_lights_vhd_tst
+Z13 w1552015942
+R2
+R3
+R0
+Z14 8G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/simulation/modelsim/tbird_lights.vht
+Z15 FG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/simulation/modelsim/tbird_lights.vht
+l0
+L30
+VY?SzjV41l5NVoo>7AD_b50
+!s100 CXjkJlB7><0gi3_l:e9;M2
+R6
+32
+Z16 !s110 1552016071
+!i10b 1
+Z17 !s108 1552016071.000000
+Z18 !s90 -reportprogress|300|-work|work|G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/simulation/modelsim/tbird_lights.vht|
+Z19 !s107 G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 2 - tbird_lights/simulation/modelsim/tbird_lights.vht|
+!i113 1
+Z20 o-work work
+R12
+Atbird_lights_arch
+R2
+R3
+Z21 DEx4 work 20 tbird_lights_vhd_tst 0 22 Y?SzjV41l5NVoo>7AD_b50
+l61
+L32
+Z22 V:KbAcA>kn1F_V<L>?nhTB1
+Z23 !s100 zO:jZQ82:fk8_SA`SVic33
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R20
+R12

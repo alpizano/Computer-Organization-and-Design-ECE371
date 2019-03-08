@@ -19,8 +19,8 @@ w => state.OUTPUTSELECT
 w => Selector4.IN3
 w => state.DATAA
 reset => state~5.DATAIN
-sw <= sw$latch.DB_MAX_OUTPUT_PORT_TYPE
-d <= <VCC>
-win <= <VCC>
+sw << sw$latch.DB_MAX_OUTPUT_PORT_TYPE
+d << <VCC>
+win << <VCC>
 
 

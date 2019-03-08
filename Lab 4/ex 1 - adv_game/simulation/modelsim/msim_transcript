@@ -1,0 +1,96 @@
+# Reading D:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do adv_game_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:01:27 on Mar 07,2019
+# vcom -reportprogress 300 -2008 -work work G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adv_game
+# -- Compiling architecture rtl of adv_game
+# End time: 20:01:27 on Mar 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -2008 -work work {G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/adv_game.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:01:27 on Mar 07,2019
+# vcom -reportprogress 300 -2008 -work work G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/adv_game.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adv_game_vhd_tst
+# -- Compiling architecture adv_game_arch of adv_game_vhd_tst
+# End time: 20:01:27 on Mar 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  newtb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" newtb 
+# Start time: 20:01:27 on Mar 07,2019
+# ** Error: (vsim-3170) Could not find 'newtb'.
+#         Searched libraries:
+#             D:/intelFPGA_lite/17.1/modelsim_ase/altera/vhdl/altera
+#             D:/intelFPGA_lite/17.1/modelsim_ase/altera/vhdl/220model
+#             D:/intelFPGA_lite/17.1/modelsim_ase/altera/vhdl/sgate
+#             D:/intelFPGA_lite/17.1/modelsim_ase/altera/vhdl/altera_mf
+#             D:/intelFPGA_lite/17.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             D:/intelFPGA_lite/17.1/modelsim_ase/altera/vhdl/cycloneive
+#             G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/rtl_work
+#             G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./adv_game_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.adv_game_vhd_tst
+# vsim work.adv_game_vhd_tst 
+# Start time: 20:01:27 on Mar 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adv_game_vhd_tst(adv_game_arch)
+# Loading work.adv_game(rtl)
+vcom -reportprogress 300 -work work {G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/adv_game.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:02:40 on Mar 07,2019
+# vcom -reportprogress 300 -work work G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/adv_game.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adv_game_vhd_tst
+# -- Compiling architecture adv_game_arch of adv_game_vhd_tst
+# End time: 20:02:40 on Mar 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/adv_game.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:02:41 on Mar 07,2019
+# vcom -reportprogress 300 -work work G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/simulation/modelsim/adv_game.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adv_game_vhd_tst
+# -- Compiling architecture adv_game_arch of adv_game_vhd_tst
+# End time: 20:02:41 on Mar 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position insertpoint  \
+sim:/adv_game_vhd_tst/clk \
+sim:/adv_game_vhd_tst/d \
+sim:/adv_game_vhd_tst/e \
+sim:/adv_game_vhd_tst/n \
+sim:/adv_game_vhd_tst/reset \
+sim:/adv_game_vhd_tst/s \
+sim:/adv_game_vhd_tst/sw \
+sim:/adv_game_vhd_tst/w \
+sim:/adv_game_vhd_tst/win
+run -all
+# End time: 20:11:57 on Mar 07,2019, Elapsed time: 0:10:30
+# Errors: 1, Warnings: 0

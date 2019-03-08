@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adv_game
-Wed Mar 06 06:38:39 2019
+Thu Mar 07 20:00:53 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 06 06:38:39 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 07 20:00:53 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; adv_game                                    ;
 ; Top-level Entity Name              ; adv_game                                    ;
@@ -171,7 +171,7 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                               ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
-; adv_game.vhd                     ; yes             ; User VHDL File  ; G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd ;         ;
+; adv_game.vhd                     ; yes             ; User VHDL File  ; G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
 
 
@@ -295,24 +295,24 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Mar 06 06:38:29 2019
+    Info: Processing started: Thu Mar 07 20:00:43 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adv_game -c adv_game
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file adv_game.vhd
-    Info (12022): Found design unit 1: adv_game-rtl File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 18
-    Info (12023): Found entity 1: adv_game File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 4
+    Info (12022): Found design unit 1: adv_game-rtl File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 18
+    Info (12023): Found entity 1: adv_game File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 4
 Info (12127): Elaborating entity "adv_game" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "sw", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
-Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "v", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
-Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "win", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
-Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "d", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
-Info (10041): Inferred latch for "d" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
-Info (10041): Inferred latch for "win" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
-Info (10041): Inferred latch for "v" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
-Info (10041): Inferred latch for "sw" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 97
+Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "sw", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
+Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "v", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
+Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "win", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
+Warning (10631): VHDL Process Statement warning at adv_game.vhd(97): inferring latch(es) for signal or variable "d", which holds its previous value in one or more paths through the process File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
+Info (10041): Inferred latch for "d" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
+Info (10041): Inferred latch for "win" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
+Info (10041): Inferred latch for "v" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
+Info (10041): Inferred latch for "sw" at adv_game.vhd(97) File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 97
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "d" is stuck at VCC File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 13
-    Warning (13410): Pin "win" is stuck at VCC File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv game/adv_game.vhd Line: 13
+    Warning (13410): Pin "d" is stuck at VCC File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 13
+    Warning (13410): Pin "win" is stuck at VCC File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 4/ex 1 - adv_game/adv_game.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -321,9 +321,9 @@ Info (21057): Implemented 24 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 15 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4841 megabytes
-    Info: Processing ended: Wed Mar 06 06:38:39 2019
+    Info: Peak virtual memory: 4831 megabytes
+    Info: Processing ended: Thu Mar 07 20:00:53 2019
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
 
 
