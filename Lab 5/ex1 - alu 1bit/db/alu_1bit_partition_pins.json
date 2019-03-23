@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Result",
+					"strict" : false
+				},
+				{
+					"name" : "ALUControl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUControl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+|alu_1bit
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[0] => full_adder:FA.Cin
+ALUControl[1] => Mux0.IN0
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+N <= N.DB_MAX_OUTPUT_PORT_TYPE
+Z <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_1bit|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
