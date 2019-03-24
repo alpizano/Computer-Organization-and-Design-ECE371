@@ -1,0 +1,1166 @@
+|alu_32bit
+A[0] => alu_1bit:ALU_0.A
+A[1] => alu_1bit:ALU_1.A
+A[2] => alu_1bit:ALU_2.A
+A[3] => alu_1bit:ALU_3.A
+A[4] => alu_1bit:ALU_4.A
+A[5] => alu_1bit:ALU_5.A
+A[6] => alu_1bit:ALU_6.A
+A[7] => alu_1bit:ALU_7.A
+A[8] => alu_1bit:ALU_8.A
+A[9] => alu_1bit:ALU_9.A
+A[10] => alu_1bit:ALU_10.A
+A[11] => alu_1bit:ALU_11.A
+A[12] => alu_1bit:ALU_12.A
+A[13] => alu_1bit:ALU_13.A
+A[14] => alu_1bit:ALU_14.A
+A[15] => alu_1bit:ALU_15.A
+A[16] => alu_1bit:ALU_16.A
+A[17] => alu_1bit:ALU_17.A
+A[18] => alu_1bit:ALU_18.A
+A[19] => alu_1bit:ALU_19.A
+A[20] => alu_1bit:ALU_20.A
+A[21] => alu_1bit:ALU_21.A
+A[22] => alu_1bit:ALU_22.A
+A[23] => alu_1bit:ALU_23.A
+A[24] => alu_1bit:ALU_24.A
+A[25] => alu_1bit:ALU_25.A
+A[26] => alu_1bit:ALU_26.A
+A[27] => alu_1bit:ALU_27.A
+A[28] => alu_1bit:ALU_28.A
+A[29] => alu_1bit:ALU_29.A
+A[30] => alu_1bit:ALU_30.A
+A[31] => XNOR_ans.IN0
+A[31] => XOR_ans.IN1
+A[31] => alu_1bit:ALU_31.A
+B[0] => alu_1bit:ALU_0.B
+B[1] => alu_1bit:ALU_1.B
+B[2] => alu_1bit:ALU_2.B
+B[3] => alu_1bit:ALU_3.B
+B[4] => alu_1bit:ALU_4.B
+B[5] => alu_1bit:ALU_5.B
+B[6] => alu_1bit:ALU_6.B
+B[7] => alu_1bit:ALU_7.B
+B[8] => alu_1bit:ALU_8.B
+B[9] => alu_1bit:ALU_9.B
+B[10] => alu_1bit:ALU_10.B
+B[11] => alu_1bit:ALU_11.B
+B[12] => alu_1bit:ALU_12.B
+B[13] => alu_1bit:ALU_13.B
+B[14] => alu_1bit:ALU_14.B
+B[15] => alu_1bit:ALU_15.B
+B[16] => alu_1bit:ALU_16.B
+B[17] => alu_1bit:ALU_17.B
+B[18] => alu_1bit:ALU_18.B
+B[19] => alu_1bit:ALU_19.B
+B[20] => alu_1bit:ALU_20.B
+B[21] => alu_1bit:ALU_21.B
+B[22] => alu_1bit:ALU_22.B
+B[23] => alu_1bit:ALU_23.B
+B[24] => alu_1bit:ALU_24.B
+B[25] => alu_1bit:ALU_25.B
+B[26] => alu_1bit:ALU_26.B
+B[27] => alu_1bit:ALU_27.B
+B[28] => alu_1bit:ALU_28.B
+B[29] => alu_1bit:ALU_29.B
+B[30] => alu_1bit:ALU_30.B
+B[31] => XNOR_ans.IN1
+B[31] => alu_1bit:ALU_31.B
+ALUControl[0] => XNOR_ans.IN1
+ALUControl[0] => alu_1bit:ALU_0.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_0.Cin
+ALUControl[0] => alu_1bit:ALU_1.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_2.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_3.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_4.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_5.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_6.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_7.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_8.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_9.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_10.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_11.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_12.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_13.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_14.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_15.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_16.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_17.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_18.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_19.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_20.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_21.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_22.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_23.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_24.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_25.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_26.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_27.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_28.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_29.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_30.ALUControl[0]
+ALUControl[0] => alu_1bit:ALU_31.ALUControl[0]
+ALUControl[1] => ALUFlags.IN1
+ALUControl[1] => alu_1bit:ALU_0.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_1.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_2.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_3.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_4.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_5.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_6.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_7.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_8.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_9.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_10.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_11.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_12.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_13.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_14.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_15.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_16.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_17.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_18.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_19.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_20.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_21.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_22.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_23.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_24.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_25.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_26.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_27.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_28.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_29.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_30.ALUControl[1]
+ALUControl[1] => alu_1bit:ALU_31.ALUControl[1]
+ALUControl[1] => ALUFlags.IN1
+Result[0] << alu_1bit:ALU_0.Result
+Result[1] << alu_1bit:ALU_1.Result
+Result[2] << alu_1bit:ALU_2.Result
+Result[3] << alu_1bit:ALU_3.Result
+Result[4] << alu_1bit:ALU_4.Result
+Result[5] << alu_1bit:ALU_5.Result
+Result[6] << alu_1bit:ALU_6.Result
+Result[7] << alu_1bit:ALU_7.Result
+Result[8] << alu_1bit:ALU_8.Result
+Result[9] << alu_1bit:ALU_9.Result
+Result[10] << alu_1bit:ALU_10.Result
+Result[11] << alu_1bit:ALU_11.Result
+Result[12] << alu_1bit:ALU_12.Result
+Result[13] << alu_1bit:ALU_13.Result
+Result[14] << alu_1bit:ALU_14.Result
+Result[15] << alu_1bit:ALU_15.Result
+Result[16] << alu_1bit:ALU_16.Result
+Result[17] << alu_1bit:ALU_17.Result
+Result[18] << alu_1bit:ALU_18.Result
+Result[19] << alu_1bit:ALU_19.Result
+Result[20] << alu_1bit:ALU_20.Result
+Result[21] << alu_1bit:ALU_21.Result
+Result[22] << alu_1bit:ALU_22.Result
+Result[23] << alu_1bit:ALU_23.Result
+Result[24] << alu_1bit:ALU_24.Result
+Result[25] << alu_1bit:ALU_25.Result
+Result[26] << alu_1bit:ALU_26.Result
+Result[27] << alu_1bit:ALU_27.Result
+Result[28] << alu_1bit:ALU_28.Result
+Result[29] << alu_1bit:ALU_29.Result
+Result[30] << alu_1bit:ALU_30.Result
+Result[31] << alu_1bit:ALU_31.Result
+ALUFlags[0] << ALUFlags.DB_MAX_OUTPUT_PORT_TYPE
+ALUFlags[1] << ALUFlags.DB_MAX_OUTPUT_PORT_TYPE
+ALUFlags[2] << ALUFlags.DB_MAX_OUTPUT_PORT_TYPE
+ALUFlags[3] << alu_1bit:ALU_31.Result
+
+
+|alu_32bit|alu_1bit:ALU_0
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_0|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_1
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_1|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_2
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_2|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_3
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_3|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_4
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_4|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_5
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_5|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_6
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_6|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_7
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_7|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_8
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_8|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_9
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_9|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_10
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_10|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_11
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_11|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_12
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_12|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_13
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_13|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_14
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_14|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_15
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_15|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_16
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_16|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_17
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_17|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_18
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_18|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_19
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_19|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_20
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_20|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_21
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_21|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_22
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_22|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_23
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_23|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_24
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_24|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_25
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_25|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_26
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_26|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_27
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_27|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_28
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_28|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_29
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_29|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_30
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_30|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_31
+A => AND_ans.IN0
+A => OR_ans.IN0
+A => full_adder:FA.A
+B => B_inter.DATAA
+B => AND_ans.IN1
+B => OR_ans.IN1
+B => B_inter.DATAB
+ALUControl[0] => B_inter.OUTPUTSELECT
+ALUControl[0] => Mux0.IN1
+ALUControl[1] => Mux0.IN0
+Cin => full_adder:FA.Cin
+Cout <= full_adder:FA.Cout
+Sum <= full_adder:FA.S
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_32bit|alu_1bit:ALU_31|full_adder:FA
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

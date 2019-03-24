@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu_32bit
-Fri Mar 22 22:02:21 2019
+Sat Mar 23 19:52:03 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,45 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "alu_1bit:ALU_30"
+ 11. Port Connectivity Checks: "alu_1bit:ALU_29"
+ 12. Port Connectivity Checks: "alu_1bit:ALU_28"
+ 13. Port Connectivity Checks: "alu_1bit:ALU_27"
+ 14. Port Connectivity Checks: "alu_1bit:ALU_26"
+ 15. Port Connectivity Checks: "alu_1bit:ALU_25"
+ 16. Port Connectivity Checks: "alu_1bit:ALU_24"
+ 17. Port Connectivity Checks: "alu_1bit:ALU_23"
+ 18. Port Connectivity Checks: "alu_1bit:ALU_22"
+ 19. Port Connectivity Checks: "alu_1bit:ALU_21"
+ 20. Port Connectivity Checks: "alu_1bit:ALU_20"
+ 21. Port Connectivity Checks: "alu_1bit:ALU_19"
+ 22. Port Connectivity Checks: "alu_1bit:ALU_18"
+ 23. Port Connectivity Checks: "alu_1bit:ALU_17"
+ 24. Port Connectivity Checks: "alu_1bit:ALU_16"
+ 25. Port Connectivity Checks: "alu_1bit:ALU_15"
+ 26. Port Connectivity Checks: "alu_1bit:ALU_14"
+ 27. Port Connectivity Checks: "alu_1bit:ALU_13"
+ 28. Port Connectivity Checks: "alu_1bit:ALU_12"
+ 29. Port Connectivity Checks: "alu_1bit:ALU_11"
+ 30. Port Connectivity Checks: "alu_1bit:ALU_10"
+ 31. Port Connectivity Checks: "alu_1bit:ALU_9"
+ 32. Port Connectivity Checks: "alu_1bit:ALU_8"
+ 33. Port Connectivity Checks: "alu_1bit:ALU_7"
+ 34. Port Connectivity Checks: "alu_1bit:ALU_6"
+ 35. Port Connectivity Checks: "alu_1bit:ALU_5"
+ 36. Port Connectivity Checks: "alu_1bit:ALU_4"
+ 37. Port Connectivity Checks: "alu_1bit:ALU_3"
+ 38. Port Connectivity Checks: "alu_1bit:ALU_2"
+ 39. Port Connectivity Checks: "alu_1bit:ALU_1"
+ 40. Port Connectivity Checks: "alu_1bit:ALU_0"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +74,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Mar 22 22:02:21 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 23 19:52:03 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; alu_32bit                                   ;
 ; Top-level Entity Name              ; alu_32bit                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 110                                         ;
+;     Total combinational functions  ; 110                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 102                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -157,27 +195,485 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+; full_adder.vhd                   ; yes             ; User VHDL File  ; G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/full_adder.vhd ;         ;
+; alu_1bit.vhd                     ; yes             ; User VHDL File  ; G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd   ;         ;
+; alu_32bit.vhd                    ; yes             ; User VHDL File  ; G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd  ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimated Total logic elements              ; 110                 ;
+;                                             ;                     ;
+; Total combinational functions               ; 110                 ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 75                  ;
+;     -- 3 input functions                    ; 33                  ;
+;     -- <=2 input functions                  ; 2                   ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 110                 ;
+;     -- arithmetic mode                      ; 0                   ;
+;                                             ;                     ;
+; Total registers                             ; 0                   ;
+;     -- Dedicated logic registers            ; 0                   ;
+;     -- I/O registers                        ; 0                   ;
+;                                             ;                     ;
+; I/O pins                                    ; 102                 ;
+;                                             ;                     ;
+; Embedded Multiplier 9-bit elements          ; 0                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; ALUControl[0]~input ;
+; Maximum fan-out                             ; 66                  ;
+; Total fan-out                               ; 541                 ;
+; Average fan-out                             ; 1.72                ;
++---------------------------------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
+; |alu_32bit                 ; 110 (15)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 102  ; 0            ; |alu_32bit                               ; alu_32bit   ; work         ;
+;    |alu_1bit:ALU_0|        ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_0                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_0|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_10|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_10               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_10|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_11|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_11               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_11|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_12|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_12               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_12|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_13|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_13               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_13|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_14|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_14               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_14|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_15|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_15               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_15|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_16|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_16               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_16|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_17|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_17               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_17|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_18|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_18               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_18|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_19|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_19               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_19|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_1|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_1                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_1|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_20|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_20               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_20|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_21|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_21               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_21|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_22|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_22               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_22|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_23|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_23               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_23|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_24|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_24               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_24|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_25|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_25               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_25|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_26|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_26               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_26|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_27|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_27               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_27|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_28|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_28               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_28|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_29|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_29               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_29|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_2|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_2                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_2|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_30|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_30               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_30|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_31|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_31               ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_31|full_adder:FA ; full_adder  ; work         ;
+;    |alu_1bit:ALU_3|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_3                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_3|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_4|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_4                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_4|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_5|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_5                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_5|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_6|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_6                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_6|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_7|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_7                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_7|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_8|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_8                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_8|full_adder:FA  ; full_adder  ; work         ;
+;    |alu_1bit:ALU_9|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_9                ; alu_1bit    ; work         ;
+;       |full_adder:FA|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_32bit|alu_1bit:ALU_9|full_adder:FA  ; full_adder  ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |alu_32bit|alu_1bit:ALU_0|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_30"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_29"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_28"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_27"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_26"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_25"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_24"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_23"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_22"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_21"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_20"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_19"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_18"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_17"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_16"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_15"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_14"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_13"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_12"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_11"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_10"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_9"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_8"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_7"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_6"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_5"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_4"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_3"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_2"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_1"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_1bit:ALU_0"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 102                         ;
+; cycloneiii_lcell_comb ; 111                         ;
+;     normal            ; 111                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 75                          ;
+;                       ;                             ;
+; Max LUT depth         ; 36.00                       ;
+; Average LUT depth     ; 23.89                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Mar 22 22:02:12 2019
+    Info: Processing started: Sat Mar 23 19:51:53 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu_32bit -c alu_32bit
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Error (10500): VHDL syntax error at alu_32bit.vhd(1) near text "libary";  expecting "entity", or "architecture", or "use", or "library", or "package", or "configuration" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 1
-Error (10523): Ignored construct alu_32bit at alu_32bit.vhd(4) due to previous errors File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 4
-Error (10500): VHDL syntax error at alu_32bit.vhd(18) near text "signal";  expecting ";", or ":=", or "bus", or "register" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 18
-Error (10500): VHDL syntax error at alu_32bit.vhd(26) near text "signal";  expecting "(", or an identifier ("signal" is a reserved keyword), or a string literal File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 26
-Error (10500): VHDL syntax error at alu_32bit.vhd(26) near text ",";  expecting ";" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 26
-Error (10500): VHDL syntax error at alu_32bit.vhd(27) near text "others";  expecting "(", or an identifier ("others" is a reserved keyword), or  unary operator File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 27
-Error (10500): VHDL syntax error at alu_32bit.vhd(30) near text "signal";  expecting "(", or an identifier ("signal" is a reserved keyword), or  unary operator File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 30
-Info (12021): Found 0 design units, including 0 entities, in source file alu_32bit.vhd
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 7 errors, 0 warnings
-    Error: Peak virtual memory: 4801 megabytes
-    Error: Processing ended: Fri Mar 22 22:02:21 2019
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:20
+Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
+    Info (12022): Found design unit 1: full_adder-dataflow File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/full_adder.vhd Line: 14
+    Info (12023): Found entity 1: full_adder File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/full_adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file alu_1bit.vhd
+    Info (12022): Found design unit 1: alu_1bit-behavioral File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd Line: 22
+    Info (12023): Found entity 1: alu_1bit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file alu_32bit.vhd
+    Info (12022): Found design unit 1: alu_32bit-structural File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 13
+    Info (12023): Found entity 1: alu_32bit File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 4
+Info (12127): Elaborating entity "alu_32bit" for the top level hierarchy
+Info (12129): Elaborating entity "alu_1bit" using architecture "A:behavioral" for hierarchy "alu_1bit:ALU_0" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd Line: 30
+Info (12129): Elaborating entity "full_adder" using architecture "A:dataflow" for hierarchy "alu_1bit:ALU_0|full_adder:FA" File: G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd Line: 39
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 212 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 110 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4813 megabytes
+    Info: Processing ended: Sat Mar 23 19:52:03 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 

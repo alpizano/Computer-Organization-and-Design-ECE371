@@ -1,0 +1,168 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/simulation/modelsim
+Ealu_1bit
+Z1 w1553383168
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd
+Z5 FG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd
+l0
+L4
+VY15o7zoaGaJ2]BTlKiQ;W2
+!s100 HNkQ0RFioa@@7zAdnQZ>62
+Z6 OV;C;10.5b;63
+33
+Z7 !s110 1553388849
+!i10b 1
+Z8 !s108 1553388849.000000
+Z9 !s90 -reportprogress|300|-2008|-work|work|G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd|
+Z10 !s107 G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_1bit.vhd|
+!i113 1
+Z11 o-2008 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+Z13 DEx4 work 10 full_adder 0 22 F<Pom_M[T8CZVheMMTo:33
+R2
+R3
+Z14 DEx4 work 8 alu_1bit 0 22 Y15o7zoaGaJ2]BTlKiQ;W2
+l30
+L22
+VjdA372GhdUANBZYQZWk1Z0
+!s100 nB>Ji]QfdXZ[=^3^E8VAb2
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu_32bit
+Z15 w1553385363
+R2
+R3
+R0
+Z16 8G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd
+Z17 FG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd
+l0
+L4
+Vbb3YG7f:3@P;_>hE<1dE@2
+!s100 hJhPRWo7aWV7PDb0<@zDZ0
+R6
+33
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-2008|-work|work|G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd|
+Z19 !s107 G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/alu_32bit.vhd|
+!i113 1
+R11
+R12
+Astructural
+R14
+R2
+R3
+DEx4 work 9 alu_32bit 0 22 bb3YG7f:3@P;_>hE<1dE@2
+l22
+L13
+VX?0oXEBTN9ga95;6z85;11
+!s100 ilmUT8OQ?h=i?=A=Md1KO2
+R6
+33
+R7
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Ealu_32bit_vhd_tst
+Z20 w1553388629
+R2
+R3
+R0
+Z21 8G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/simulation/modelsim/alu_32bit.vht
+Z22 FG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/simulation/modelsim/alu_32bit.vht
+l0
+L30
+VdM33FWBV^OHoOF2`6z4[l0
+!s100 iS6eJ^1O^kF:ZcXIjbB`Z0
+R6
+32
+Z23 !s110 1553388866
+!i10b 1
+Z24 !s108 1553388866.000000
+Z25 !s90 -reportprogress|300|-work|work|G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/simulation/modelsim/alu_32bit.vht|
+Z26 !s107 G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/simulation/modelsim/alu_32bit.vht|
+!i113 1
+Z27 o-work work
+R12
+Aalu_32bit_arch
+R2
+R3
+DEx4 work 17 alu_32bit_vhd_tst 0 22 dM33FWBV^OHoOF2`6z4[l0
+l49
+L32
+V3iJki=9FBogMJoO]C@U0[0
+Z28 !s100 S>PMhWRjV5B_GG?G9]`Zc1
+R6
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R27
+R12
+Efull_adder
+Z29 w1549873691
+R2
+R3
+R0
+Z30 8G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/full_adder.vhd
+Z31 FG:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/full_adder.vhd
+l0
+L4
+VF<Pom_M[T8CZVheMMTo:33
+!s100 k8KmYJIcnETKA2NMdD=2U0
+R6
+33
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-2008|-work|work|G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/full_adder.vhd|
+Z33 !s107 G:/PURDUE/Semester VII - Spring 2019/ECE371/Github/Labs/Lab 5/ex1 - alu 32bit/full_adder.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R2
+R3
+R13
+l16
+L14
+VN8dIFH8]lATVHBOlG0DbM2
+!s100 K[aK6_O8d^gnUDRU__43F2
+R6
+33
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
