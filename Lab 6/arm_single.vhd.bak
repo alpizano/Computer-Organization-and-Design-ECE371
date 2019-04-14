@@ -634,11 +634,9 @@ begin
 
   process(all) begin
     case? ALUControl(2 downto 0) is -- Needs to be 2 downto 0 for EOR support 4/13/2019 A.P.
-    --when "0-"   => result <= sum(31 downto 0); 
-      when "000"   => result <= sum(31 downto 0); -- ADD
-      when "001"   => result <= sum(31 downto 0); -- SUB
-      when "010"  => result <= a and b; -- AND
-      when "011"  => result <= a or b; -- OR
+      when "0-"   => result <= sum(31 downto 0); 
+      when "010"  => result <= a and b; 
+      when "011"  => result <= a or b; 
       when "100"  => result <= a xor b; -- For EOR support 4/13/2019 A.P.
       when others => result <= (others => '-');
     end case?;
