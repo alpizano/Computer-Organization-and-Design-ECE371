@@ -79,24 +79,27 @@ architecture test of top is
          ALUResult, WriteData: out STD_LOGIC_VECTOR(31 downto 0);
          ReadData:          in  STD_LOGIC_VECTOR(31 downto 0));
   end component;
+
   component imem
     port(a:  in  STD_LOGIC_VECTOR(31 downto 0);
          rd: out STD_LOGIC_VECTOR(31 downto 0));
   end component;
+
   component dmem
     port(clk, we:  in STD_LOGIC;
+         load_register_byte: in STD_LOGIC;
          a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
          rd:       out STD_LOGIC_VECTOR(31 downto 0));
   end component;
+
   signal PC, Instr, 
          ReadData: STD_LOGIC_VECTOR(31 downto 0);
 begin
+
   -- instantiate processor and memories
-  i_arm: arm port map(clk, reset, PC, Instr, MemWrite, DataAdr, 
-                       WriteData, ReadData);
+  i_arm: arm port map(clk, reset, PC, Instr, MemWrite, DataAdr, WriteData, ReadData);
   i_imem: imem port map(PC, Instr);
-  i_dmem: dmem port map(clk, MemWrite, DataAdr, 
-                             WriteData, ReadData);
+  i_dmem: dmem port map(clk, MemWrite, Instr(22), DataAdr, WriteData, ReadData); -- Added Instr(22) to get port mapped to load_register_byte because 22nd bit of Instruction(31:0) is B=1 only for LDRB 4/13/2019 A.P.
 end;
 
 library IEEE; 
@@ -105,6 +108,7 @@ use IEEE.STD_LOGIC_1164.all; use STD.TEXTIO.all;
 use IEEE.NUMERIC_STD.all; -- Added 
 entity dmem is -- data memory
   port(clk, we:  in STD_LOGIC;
+       load_register_byte: in STD_LOGIC;
        a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
        rd:       out STD_LOGIC_VECTOR(31 downto 0));
 end;
@@ -112,20 +116,29 @@ end;
 architecture behave of dmem is
 begin
   process is
-    type ramtype is array (63 downto 0) of 
+    type ramtype is array (63 downto 0) of -- Changed from 63 downto 0 to 255 downto 0 or error 4/13/2019 A.P.
                     STD_LOGIC_VECTOR(31 downto 0);
     variable mem: ramtype;
   begin -- read or write memory
+
     loop
       if clk'event and clk = '1' then
           if (we = '1') then 
             mem(to_integer(unsigned(a(7 downto 2)))) := wd;
           end if;
       end if;
-
-
-      rd <= mem(to_integer(unsigned(a(7 downto 2)))); 
-
+-- Added for LDRB, AND bit mask with mem to select specific byte of word you want 4/13/2019 A.P.
+      if(load_register_byte = '1') then
+       case(a(1 downto 0)) is
+      	  when "00" => rd <= X"000000FF" AND mem(to_integer(unsigned(a(7 downto 2))));
+	  when "01" => rd <=((X"0000FF00" AND mem(to_integer(unsigned(a(7 downto 2))))) ror 8); 
+	  when "10" => rd <=((X"00FF0000" AND mem(to_integer(unsigned(a(7 downto 2))))) ror 16); 
+          when "11" => rd <=((X"FF000000" AND mem(to_integer(unsigned(a(7 downto 2))))) ror 24); 
+      	  when others => rd <=(31 downto 0 => '-');
+       end case;
+      else
+          rd <= mem(to_integer(unsigned(a(7 downto 2)))); 
+      end if;
       wait on clk, a;
     end loop;
   end process;
@@ -155,7 +168,7 @@ begin
       mem(i) := (others => '0'); 
     end loop;
     index := 0; 
-    FILE_OPEN(mem_file, "memfile.dat", READ_MODE);
+    FILE_OPEN(mem_file, "memfile2.dat", READ_MODE);
     while not endfile(mem_file) loop
       readline(mem_file, L);
       result := 0;
@@ -203,7 +216,7 @@ architecture struct of arm is
          RegWrite:          out STD_LOGIC;
          ImmSrc:            out STD_LOGIC_VECTOR(1 downto 0);
          ALUSrc:            out STD_LOGIC;
-         ALUControl:        out STD_LOGIC_VECTOR(1 downto 0);
+         ALUControl:        out STD_LOGIC_VECTOR(2 downto 0);
          MemWrite:          out STD_LOGIC;
          MemtoReg:          out STD_LOGIC;
          PCSrc:             out STD_LOGIC);
@@ -214,7 +227,7 @@ architecture struct of arm is
          RegWrite:          in  STD_LOGIC;
          ImmSrc:            in  STD_LOGIC_VECTOR(1 downto 0);
          ALUSrc:            in  STD_LOGIC;
-         ALUControl:        in  STD_LOGIC_VECTOR(1 downto 0);
+         ALUControl:        in  STD_LOGIC_VECTOR(2 downto 0);
          MemtoReg:          in  STD_LOGIC;
          PCSrc:             in  STD_LOGIC;
          ALUFlags:          out STD_LOGIC_VECTOR(3 downto 0);
@@ -224,7 +237,8 @@ architecture struct of arm is
          ReadData:          in  STD_LOGIC_VECTOR(31 downto 0));
   end component;
   signal RegWrite, ALUSrc, MemtoReg, PCSrc: STD_LOGIC;
-  signal RegSrc, ImmSrc, ALUControl: STD_LOGIC_VECTOR(1 downto 0);
+  signal RegSrc, ImmSrc: STD_LOGIC_VECTOR(1 downto 0);
+  signal ALUControl: STD_LOGIC_VECTOR(2 downto 0);
   signal ALUFlags: STD_LOGIC_VECTOR(3 downto 0);
 begin
   cont: controller port map(clk, reset, Instr(31 downto 12), 
@@ -246,7 +260,7 @@ entity controller is -- single cycle control decoder
        RegWrite:          out STD_LOGIC;
        ImmSrc:            out STD_LOGIC_VECTOR(1 downto 0);
        ALUSrc:            out STD_LOGIC;
-       ALUControl:        out STD_LOGIC_VECTOR(1 downto 0);
+       ALUControl:        out STD_LOGIC_VECTOR(2 downto 0);
        MemWrite:          out STD_LOGIC;
        MemtoReg:          out STD_LOGIC;
        PCSrc:             out STD_LOGIC);
@@ -261,7 +275,7 @@ architecture struct of controller is
          PCS, RegW, MemW:  out STD_LOGIC;
          MemtoReg, ALUSrc: out STD_LOGIC;
          ImmSrc, RegSrc:   out STD_LOGIC_VECTOR(1 downto 0);
-         ALUControl:       out STD_LOGIC_VECTOR(1 downto 0));
+         ALUControl:       out STD_LOGIC_VECTOR(2 downto 0));
   end component;
   component condlogic
     port(clk, reset:       in  STD_LOGIC;
@@ -289,35 +303,43 @@ entity decoder is -- main control decoder
   port(Op:               in  STD_LOGIC_VECTOR(1 downto 0);
        Funct:            in  STD_LOGIC_VECTOR(5 downto 0);
        Rd:               in  STD_LOGIC_VECTOR(3 downto 0);
+
        FlagW:            out STD_LOGIC_VECTOR(1 downto 0);
        PCS, RegW, MemW:  out STD_LOGIC;
        MemtoReg, ALUSrc: out STD_LOGIC;
+       NoWrite:          out STD_LOGIC; -- Added NoWrite output from decoder 4/13/2019 A.P.
        ImmSrc, RegSrc:   out STD_LOGIC_VECTOR(1 downto 0);
-       ALUControl:       out STD_LOGIC_VECTOR(1 downto 0));
+       ALUControl:       out STD_LOGIC_VECTOR(2 downto 0));
 end;
 
 architecture behave of decoder is
   signal controls:      STD_LOGIC_VECTOR(9 downto 0);
   signal ALUOp, Branch: STD_LOGIC;
   signal op2:           STD_LOGIC_VECTOR(3 downto 0); -- Funct(4:0) 4/13/2019 A.P.
-  signal PCReg: 			STD_LOGIC; -- Added
+  signal PCReg:         STD_LOGIC; -- Added
+
 begin
+
   op2 <= (Op, Funct(5), Funct(0));
+
   process(all) begin -- Main Decoder
     case? (op2) is
--- i.e. when "OP Funct5 Funct0" => controls <= RegSrc(1:0) ImmSrc(1:0) ALUSrc MemtoReg RegW MemW Branch ALUOp 
+-- i.e. when "OP Funct(5) Funct(0)" => controls <= RegSrc(1:0) ImmSrc(1:0) ALUSrc MemtoReg RegW MemW Branch ALUOp 
 -- 4/13/2019 A.P.
-      when "000-" => controls <= "0000001001"; -- DP Reg, 4/13/2019 A.P.
-      when "001-" => controls <= "0000101001"; -- DP Imm, 4/13/2019 A.P., not correct yet
+      --when "000-" => controls <= "0000001001"; 
+      when "000-" => controls <= "00--001001"; -- DP Reg, 4/13/2019 A.P.
+      --when "001-" => controls <= "0000101001"; 
+      when "001-" => controls <= "-000101001"; -- DP Imm, 4/13/2019 A.P.
       when "01-0" => controls <= "1001110100"; -- STR, 4/13/2019 A.P.
-      when "01-1" => controls <= "0001111000"; -- LDR, 4/13/2019 A.P.
-      when "10--" => controls <= "0110100010";
+      --when "01-1" => controls <= "0001111000"; 
+      when "01-1" => controls <= "-001111000"; -- LDR, 4/13/2019 A.P.
+      --when "10--" => controls <= "0110100010"; 
+      when "10--" => controls <= "-110100010"; -- B, 4/13/2019 A.P.
       when others => controls <= "----------";
     end case?;
   end process;
 
-  (RegSrc, ImmSrc, ALUSrc, MemtoReg, RegW, MemW, 
-    Branch, ALUOp) <= controls;
+  (RegSrc, ImmSrc, ALUSrc, MemtoReg, RegW, MemW, Branch, ALUOp) <= controls;
     
   process(all) begin -- ALU Decoder
     if (ALUOp) then
@@ -330,12 +352,16 @@ begin
 	when "0001" => ALUControl <= "100"; -- added EOR 4/13/2019 A.P.
         when others => ALUControl <= "---"; -- unimplemented
       end case;
+
       FlagW(1) <= Funct(0);
       FlagW(0) <= Funct(0) and (not ALUControl(1));
+
     else 
-      ALUControl <= "00";
+      ALUControl <= "000";
       FlagW <= "00";
+
     end if;
+
   end process;
   PCReg <= Rd(3) and Rd(2) and Rd(1) and Rd(0); -- Added
   -- PCS <= ((and Rd) and RegW) or Branch;
@@ -350,6 +376,7 @@ entity condlogic is -- Conditional logic
        FlagW:            in  STD_LOGIC_VECTOR(1 downto 0);
        PCS, RegW, MemW:  in  STD_LOGIC;
        NoWrite:          in  STD_LOGIC; --added NoWrite 4/13/2019 A.P.
+
        PCSrc, RegWrite:  out STD_LOGIC;
        MemWrite:         out STD_LOGIC);
 end;
@@ -440,7 +467,7 @@ end;
 architecture struct of datapath is
   component alu
     port(a, b:       in  STD_LOGIC_VECTOR(31 downto 0);
-         ALUControl: in  STD_LOGIC_VECTOR(1 downto 0);
+         ALUControl: in  STD_LOGIC_VECTOR(2 downto 0);
          Result:     buffer STD_LOGIC_VECTOR(31 downto 0);
          ALUFlags:      out STD_LOGIC_VECTOR(3 downto 0));
   end component;
@@ -470,10 +497,22 @@ architecture struct of datapath is
          s:      in  STD_LOGIC;
          y:      out STD_LOGIC_VECTOR(width-1 downto 0));
   end component;
+
+ -- Added shift unit port 4/13/2019 A.P.
+  component shiftUnit port(
+	  input : in std_logic_vector(31 downto 0);
+	  sh: in std_logic_vector(1 downto 0);
+	  shamt : in std_logic_vector(4 downto 0);
+	  output: out std_logic_vector(31 downto 0));
+  end component;
+  -- End added
+
   signal PCNext, PCPlus4, PCPlus8: STD_LOGIC_VECTOR(31 downto 0);
   signal ExtImm, Result:           STD_LOGIC_VECTOR(31 downto 0);
   signal SrcA, SrcB:               STD_LOGIC_VECTOR(31 downto 0);
+  signal mux1SrcB:                 STD_LOGIC_VECTOR(31 downto 0); --Added signal for shifter 4/13/2019 A.P.
   signal RA1, RA2:                 STD_LOGIC_VECTOR(3 downto 0);
+
 begin
   -- next PC logic
   pcmux: mux2 generic map(32)
@@ -496,9 +535,48 @@ begin
 
   -- ALU logic
   srcbmux: mux2 generic map(32) 
-    port map(WriteData, ExtImm, ALUSrc, SrcB);
+
+  --port map(WriteData, ExtImm, ALUSrc, SrcB);
+    port map(mux1SrcB, ExtImm, ALUSrc, SrcB); -- Added port map 4/13/2019
+    shift: shiftUnit port map(WriteData, Instr(6 downto 5),Instr(11 downto 7),mux1SrcB); -- Added Shifterunit 4/13/2019
+
   i_alu: alu port map(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
 end;
+
+-- Added shift unit entity 4/13/2019 A.P
+library IEEE; use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity shiftUnit is 
+port( input:  in std_logic_vector(31 downto 0);
+      sh:     in std_logic_vector(1 downto 0);
+      shamt:  in std_logic_vector(4 downto 0);
+      output: out std_logic_vector(31 downto 0));
+end;
+
+architecture behavioral of shiftUnit is
+signal ll: std_logic_vector(31 downto 0);
+signal lr: std_logic_vector(31 downto 0);
+signal ar: std_logic_vector(31 downto 0);
+signal rr: std_logic_vector(31 downto 0);
+signal dontCare: std_logic_vector(31 downto 0);
+
+begin
+ll <= input sll to_integer(unsigned(shamt));
+lr <= input srl to_integer(unsigned(shamt));
+ar <= std_logic_vector(shift_right(signed(input), to_integer(unsigned(shamt))));
+rr <= input ror to_integer(unsigned(shamt));
+dontCare <= (31 downto 0 => '-');
+
+with sh select output <=
+ll when "00",
+lr when "01",
+ar when "10",
+rr when "11",
+dontCare when others;
+
+end architecture behavioral;
+-- End added
 
 library IEEE; use IEEE.STD_LOGIC_1164.all; 
 use IEEE.NUMERIC_STD_UNSIGNED.all;
