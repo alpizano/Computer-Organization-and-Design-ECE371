@@ -52,8 +52,8 @@ begin
   -- at end of program
   process (clk) begin
     if (clk'event and clk = '0' and MemWrite = '1') then
-      if (to_integer(unsigned(DataAdr)) = 100 and 
-          to_integer(unsigned(WriteData)) = 7) then 
+      if (to_integer(unsigned(DataAdr)) = 128 and 
+          to_integer(unsigned(WriteData)) = 16) then 
         report "NO ERRORS: Simulation succeeded" severity failure;
       elsif (unsigned(DataAdr) /= 96) then 
         report "Simulation failed" severity failure;
@@ -87,7 +87,7 @@ architecture test of top is
 
   component dmem
     port(clk, we:  in STD_LOGIC;
-         load_register_byte: in STD_LOGIC;
+         load_register_byte: in STD_LOGIC; -- Added load register byte 4/13/2019 A.P.
          a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
          rd:       out STD_LOGIC_VECTOR(31 downto 0));
   end component;
@@ -108,7 +108,7 @@ use IEEE.STD_LOGIC_1164.all; use STD.TEXTIO.all;
 use IEEE.NUMERIC_STD.all; -- Added 
 entity dmem is -- data memory
   port(clk, we:  in STD_LOGIC;
-       load_register_byte: in STD_LOGIC;
+       load_register_byte: in STD_LOGIC; -- Added load register byte 4/13/2019 A.P.
        a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
        rd:       out STD_LOGIC_VECTOR(31 downto 0));
 end;
@@ -130,7 +130,7 @@ begin
 -- Added for LDRB, AND bit mask with mem to select specific byte of word you want 4/13/2019 A.P.
       if(load_register_byte = '1') then
        case(a(1 downto 0)) is
-      	  when "00" => rd <= X"000000FF" AND mem(to_integer(unsigned(a(7 downto 2))));
+      	  when "00" => rd <= X"000000FF" AND mem(to_integer(unsigned(a(7 downto 2)))); -- LSB
 	  when "01" => rd <=((X"0000FF00" AND mem(to_integer(unsigned(a(7 downto 2))))) ror 8); 
 	  when "10" => rd <=((X"00FF0000" AND mem(to_integer(unsigned(a(7 downto 2))))) ror 16); 
           when "11" => rd <=((X"FF000000" AND mem(to_integer(unsigned(a(7 downto 2))))) ror 24); 
@@ -221,6 +221,7 @@ architecture struct of arm is
          MemtoReg:          out STD_LOGIC;
          PCSrc:             out STD_LOGIC);
   end component;
+
   component datapath
     port(clk, reset:        in  STD_LOGIC;
          RegSrc:            in  STD_LOGIC_VECTOR(1 downto 0);
@@ -236,10 +237,12 @@ architecture struct of arm is
          ALUResult, WriteData: buffer STD_LOGIC_VECTOR(31 downto 0);
          ReadData:          in  STD_LOGIC_VECTOR(31 downto 0));
   end component;
+
   signal RegWrite, ALUSrc, MemtoReg, PCSrc: STD_LOGIC;
   signal RegSrc, ImmSrc: STD_LOGIC_VECTOR(1 downto 0);
   signal ALUControl: STD_LOGIC_VECTOR(2 downto 0);
   signal ALUFlags: STD_LOGIC_VECTOR(3 downto 0);
+
 begin
   cont: controller port map(clk, reset, Instr(31 downto 12), 
                             ALUFlags, RegSrc, RegWrite, ImmSrc, 
@@ -277,6 +280,7 @@ architecture struct of controller is
          ImmSrc, RegSrc:   out STD_LOGIC_VECTOR(1 downto 0);
          ALUControl:       out STD_LOGIC_VECTOR(2 downto 0));
   end component;
+
   component condlogic
     port(clk, reset:       in  STD_LOGIC;
          Cond:             in  STD_LOGIC_VECTOR(3 downto 0);
@@ -286,8 +290,10 @@ architecture struct of controller is
          PCSrc, RegWrite:  out STD_LOGIC;
          MemWrite:         out STD_LOGIC);
   end component;
+
   signal FlagW: STD_LOGIC_VECTOR(1 downto 0);
   signal PCS, RegW, MemW: STD_LOGIC;
+
 begin
   dec: decoder port map(Instr(27 downto 26), Instr(25 downto 20),
                        Instr(15 downto 12), FlagW, PCS, 
@@ -345,11 +351,17 @@ begin
     if (ALUOp) then
       case Funct(4 downto 1) is
         when "0100" => ALUControl <= "000"; -- ADD
+        NoWrite <= '0';
         when "0010" => ALUControl <= "001"; -- SUB
+        NoWrite <= '0';
         when "0000" => ALUControl <= "010"; -- AND
+        NoWrite <= '0';
         when "1100" => ALUControl <= "011"; -- ORR
+        NoWrite <= '0'; 
 	when "1010" => ALUControl <= "001"; -- added CMP 4/13/2019 A.P.
+	NoWrite <= '1';
 	when "0001" => ALUControl <= "100"; -- added EOR 4/13/2019 A.P.
+        NoWrite <= '0';
         when others => ALUControl <= "---"; -- unimplemented
       end case;
 
@@ -376,7 +388,6 @@ entity condlogic is -- Conditional logic
        FlagW:            in  STD_LOGIC_VECTOR(1 downto 0);
        PCS, RegW, MemW:  in  STD_LOGIC;
        NoWrite:          in  STD_LOGIC; --added NoWrite 4/13/2019 A.P.
-
        PCSrc, RegWrite:  out STD_LOGIC;
        MemWrite:         out STD_LOGIC);
 end;
@@ -409,7 +420,6 @@ begin
   MemWrite  <= MemW  and CondEx;
   FlagWrite <= FlagW and (CondEx, CondEx); 
   
-
 end;
 
 library IEEE; use IEEE.STD_LOGIC_1164.all;
