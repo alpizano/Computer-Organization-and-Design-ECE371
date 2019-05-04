@@ -1,16 +1,20 @@
 public class SelectionSort {
     public static void selectionSort(int[] arr){
-        for (int i = 0; i < arr.length - 1; i++)
+        for (int i = 0; i < 4; i++)
         {
-            int index = i;
-            for (int j = i + 1; j < arr.length; j++){
-                if (arr[j] < arr[index]){
-                    index = j;//searching for lowest index
+            int iMin = i;
+
+            for (int j = i + 1; j < 5; j++)
+            {
+                if (arr[j] < arr[iMin])
+                {
+                    iMin = j; //searching for lowest index
                 }
             }
-            int smallerNumber = arr[index];
-            arr[index] = arr[i];
-            arr[i] = smallerNumber;
+
+            int temp = arr[iMin];
+            arr[iMin] = arr[i];
+            arr[i] = temp;
         }
     }
 
